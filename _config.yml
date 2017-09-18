@@ -17,7 +17,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Hello"
   location         : "Taiwan"
-  email            :
+  email            : "az6980522@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -41,7 +41,20 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UCHoFSmS_Gr5Og29pQv4ctwA"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
 # Defaults
 defaults:
@@ -53,6 +66,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
