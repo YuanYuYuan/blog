@@ -6,8 +6,12 @@ image: ruby:2.3
 variables:
   JEKYLL_ENV: production
 
+cache:
+    paths:
+    - vendor/
+
 before_script:
-- bundle install
+- bundle install --path vendor
 
 test:
   stage: test

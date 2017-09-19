@@ -49,6 +49,19 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Reading Files
+include:
+  - _pages
+exclude:
+  - vendor
+  - Gemfile
+  - README
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
