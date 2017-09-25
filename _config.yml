@@ -15,7 +15,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 author:
   name             : "Yuan Yu Yuan"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Hello"
+  bio              : "Someone who likes Linux, robot and math"
   location         : "Taiwan"
   email            : "az6980522@gmail.com"
   uri              :
@@ -25,8 +25,8 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
-  gitlab           :
+  github           : "YuanYuYuan"
+  gitlab           : "YuanYuYuan"
   google_plus      :
   keybase          :
   instagram        :
@@ -54,12 +54,20 @@ include:
   - _pages
 exclude:
   - vendor
+  - .sass-cache
   - Gemfile
   - README
 keep_files:
   - .git
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 
 plugins:
@@ -82,3 +90,10 @@ defaults:
       comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

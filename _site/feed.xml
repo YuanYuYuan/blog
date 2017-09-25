@@ -1,1 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-09-19T11:36:31+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><summary type="html">Test!</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-09-25T23:12:39+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
+we have to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;, 
+Media Transfer Protocol.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Linux MTP support is provided by &lt;a href=&quot;https://www.archlinux.org/packages/?name=libmtp&quot;&gt;libmtp&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;For CLI, I recommend use AUR package &lt;a href=&quot;https://aur.archlinux.org/packages/simple-mtpfs/&quot;&gt;simple-mtpfs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For GUI, I recommend use &lt;a href=&quot;https://www.archlinux.org/packages/?name=thunar&quot;&gt;Thunar&lt;/a&gt; file manager, 
+&lt;a href=&quot;https://www.archlinux.org/packages/?name=gvfs&quot;&gt;gvfs&lt;/a&gt; virtual filesystem implementation for GIO, 
+&lt;a href=&quot;https://www.archlinux.org/packages/?name=gvfs-mtp&quot;&gt;gvfs-mtp&lt;/a&gt; MTP backend, 
+&lt;a href=&quot;https://www.archlinux.org/packages/?name=gvfs-mtp&quot;&gt;thunar-volman&lt;/a&gt; Thunar volume manager.&lt;/p&gt;
+
+&lt;h2 id=&quot;usage-of-simple-mtpfs&quot;&gt;Usage of simple-mtpfs&lt;/h2&gt;
+
+&lt;p&gt;List detected devices&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;simple-mtpfs -l
+1: AsusFonepad 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;FE375CXG&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mount device 1 on ~/mnt&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;simple-mtpfs --device 1 ~/mnt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Unmount mountpoint ~/mnt&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;fusermount -u ~/mnt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;configuration-of-thunar&quot;&gt;Configuration of Thunar&lt;/h2&gt;
+
+&lt;p&gt;To let Thunar handle automatice mounting, one must launch Thunar in daemon mode.&lt;/p&gt;
+
+&lt;p&gt;So execute &lt;code class=&quot;highlighter-rouge&quot;&gt;thunar --daemon&lt;/code&gt; as login, one may add this command into i3 config file for startup.&lt;/p&gt;
+
+&lt;p&gt;And launch Thunar and go to &lt;em&gt;Edit&lt;/em&gt; &amp;gt; &lt;em&gt;Preferences&lt;/em&gt;, check &lt;em&gt;Enable Volume Managerment&lt;/em&gt; under the &lt;em&gt;Advanced&lt;/em&gt; tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/thunar-volman-1.png&quot; alt=&quot;thunar-volman-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check &lt;em&gt;Mount removable drivers when hot-plugged&lt;/em&gt;, &lt;em&gt;Mount removable media wehn inserted&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/thunar-volman-2.png&quot; alt=&quot;thunar-volman-2&quot; /&gt;&lt;/p&gt;
+
+&lt;aside class=&quot;sidebar__right&quot;&gt;
+&lt;nav class=&quot;toc&quot;&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
+&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation&quot; id=&quot;markdown-toc-installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#usage-of-simple-mtpfs&quot; id=&quot;markdown-toc-usage-of-simple-mtpfs&quot;&gt;Usage of simple-mtpfs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#configuration-of-thunar&quot; id=&quot;markdown-toc-configuration-of-thunar&quot;&gt;Configuration of Thunar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/nav&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Robot</title><link href="http://localhost:4000/blog/robot/balancing-robot/" rel="alternate" type="text/html" title="Balancing Robot" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>http://localhost:4000/blog/robot/balancing-robot</id><content type="html" xml:base="http://localhost:4000/blog/robot/balancing-robot/">&lt;p&gt;This is a project about the robot controlling its balance.&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;MOTIVATION&lt;/h2&gt;
+
+&lt;h2 id=&quot;physical-model&quot;&gt;PHYSICAL MODEL&lt;/h2&gt;
+
+&lt;h3 id=&quot;free-body-diagram&quot;&gt;FREE BODY DIAGRAM&lt;/h3&gt;
+
+&lt;h3 id=&quot;newton-method&quot;&gt;NEWTON METHOD&lt;/h3&gt;
+
+&lt;h3 id=&quot;lagrangian-method&quot;&gt;LAGRANGIAN METHOD&lt;/h3&gt;
+
+&lt;h2 id=&quot;measurement&quot;&gt;MEASUREMENT&lt;/h2&gt;
+
+&lt;h2 id=&quot;simulation&quot;&gt;SIMULATION&lt;/h2&gt;
+
+&lt;h3 id=&quot;state-space&quot;&gt;STATE SPACE&lt;/h3&gt;
+
+&lt;h3 id=&quot;transfer-function&quot;&gt;TRANSFER FUNCTION&lt;/h3&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;IMPLEMENTATION&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware&quot;&gt;HARDWARE&lt;/h3&gt;
+
+&lt;h3 id=&quot;schematics&quot;&gt;SCHEMATICS&lt;/h3&gt;
+
+&lt;h2 id=&quot;videos&quot;&gt;VIDEOS&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/robot/small-car.gif&quot; alt=&quot;small-car&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/blog/assets/images/robot/big-car.gif&quot; alt=&quot;big-car&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;analysis&quot;&gt;ANALYSIS&lt;/h2&gt;
+
+&lt;h2 id=&quot;machine-learning&quot;&gt;MACHINE LEARNING&lt;/h2&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;REFERENCE&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum&amp;amp;section=ControlStateSpace&quot;&gt;MATLAB: State-Space Methods for Controller Design&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mechanical-engineering/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/lecture-notes/lec19.pdf&quot;&gt;MIT OCW Linear Quadratic Regulator&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-30-feedback-control-systems-fall-2010/lecture-notes/MIT16_30F10_lec18.pdf&quot;&gt;MIT OCW Feedback Control&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Measurement of moment of inertia: Katsuhiko Ogata(2004). System Dynamics (4th ed). pp.82-83 New Jersey:Pearson&lt;/p&gt;
+
+&lt;aside class=&quot;sidebar__right&quot;&gt;
+&lt;nav class=&quot;toc&quot;&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
+&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#motivation&quot; id=&quot;markdown-toc-motivation&quot;&gt;MOTIVATION&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#physical-model&quot; id=&quot;markdown-toc-physical-model&quot;&gt;PHYSICAL MODEL&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#free-body-diagram&quot; id=&quot;markdown-toc-free-body-diagram&quot;&gt;FREE BODY DIAGRAM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#newton-method&quot; id=&quot;markdown-toc-newton-method&quot;&gt;NEWTON METHOD&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lagrangian-method&quot; id=&quot;markdown-toc-lagrangian-method&quot;&gt;LAGRANGIAN METHOD&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#measurement&quot; id=&quot;markdown-toc-measurement&quot;&gt;MEASUREMENT&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#simulation&quot; id=&quot;markdown-toc-simulation&quot;&gt;SIMULATION&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#state-space&quot; id=&quot;markdown-toc-state-space&quot;&gt;STATE SPACE&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#transfer-function&quot; id=&quot;markdown-toc-transfer-function&quot;&gt;TRANSFER FUNCTION&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#implementation&quot; id=&quot;markdown-toc-implementation&quot;&gt;IMPLEMENTATION&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#hardware&quot; id=&quot;markdown-toc-hardware&quot;&gt;HARDWARE&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#schematics&quot; id=&quot;markdown-toc-schematics&quot;&gt;SCHEMATICS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#videos&quot; id=&quot;markdown-toc-videos&quot;&gt;VIDEOS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#analysis&quot; id=&quot;markdown-toc-analysis&quot;&gt;ANALYSIS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#machine-learning&quot; id=&quot;markdown-toc-machine-learning&quot;&gt;MACHINE LEARNING&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#reference&quot; id=&quot;markdown-toc-reference&quot;&gt;REFERENCE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/nav&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the robot controlling its balance.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!
+Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><summary type="html">Test! Test2!</summary></entry></feed>
