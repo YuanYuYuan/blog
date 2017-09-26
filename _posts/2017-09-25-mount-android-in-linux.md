@@ -1,6 +1,7 @@
 ---
 title: "Mount Android in Linux"
 header:
+  teaser: /assets/images/unsplash-2.jpg
   image: /assets/images/unsplash-2.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:

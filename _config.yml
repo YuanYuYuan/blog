@@ -9,7 +9,7 @@ description              : "A personal blog"
 url                      : "https://yuanyuyuan.gitlab.io"
 baseurl                  : "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/unsplash-1.jpg"
 
 # Site Author
 author:
@@ -76,6 +76,25 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Defaults
 defaults:
