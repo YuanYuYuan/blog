@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-09-26T20:04:00+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Creation of a Landscape: The Logic or Urbanization in the PRC</title><link href="http://localhost:4000/blog/writing/pdf/" rel="alternate" type="text/html" title="Creation of a Landscape: The Logic or Urbanization in the PRC" /><published>2017-09-26T00:00:00+08:00</published><updated>2017-09-26T00:00:00+08:00</updated><id>http://localhost:4000/blog/writing/pdf</id><content type="html" xml:base="http://localhost:4000/blog/writing/pdf/">&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-09-27T05:32:03+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
 we have to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;, 
 Media Transfer Protocol.&lt;/p&gt;
 
@@ -58,10 +58,7 @@ Media Transfer Protocol.&lt;/p&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="http://localhost:4000/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>http://localhost:4000/blog/robot/balancing-car</id><content type="html" xml:base="http://localhost:4000/blog/robot/balancing-car/">&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;
-&lt;/script&gt;
-
-&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="http://localhost:4000/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>http://localhost:4000/blog/robot/balancing-car</id><content type="html" xml:base="http://localhost:4000/blog/robot/balancing-car/">&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
 
 &lt;h2 id=&quot;robots&quot;&gt;ROBOTS&lt;/h2&gt;
 
@@ -89,8 +86,6 @@ Media Transfer Protocol.&lt;/p&gt;
 
 &lt;p&gt;We can part&lt;/p&gt;
 
-&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
-
 &lt;figure class=&quot;third &quot;&gt;
   
     
@@ -100,8 +95,8 @@ Media Transfer Protocol.&lt;/p&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-body.png&quot; title=&quot;Free Body Diagram of Body&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-body.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png&quot; title=&quot;Free Body Diagram of rod&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -112,30 +107,356 @@ Media Transfer Protocol.&lt;/p&gt;
     
   
   
-    &lt;figcaption&gt;Free Body Diagram of &lt;strong&gt;body&lt;/strong&gt; and &lt;strong&gt;wheel&lt;/strong&gt;.
+    &lt;figcaption&gt;Free Body Diagram of &lt;strong&gt;rod&lt;/strong&gt; and &lt;strong&gt;wheel&lt;/strong&gt;.
 &lt;/figcaption&gt;
   
 &lt;/figure&gt;
 
 &lt;h3 id=&quot;newton-method&quot;&gt;NEWTON METHOD&lt;/h3&gt;
 
-&lt;p&gt;\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \]&lt;/p&gt;
+&lt;p&gt;Angular acceleration of wheel&lt;/p&gt;
+
+&lt;p&gt;\[ I\omega \ddot{\phi}=\tau -F\cdot R \]&lt;/p&gt;
+
+&lt;p&gt;Linear acceleration of wheel C.M.&lt;/p&gt;
+
+&lt;p&gt;\[ \hat{i}:m_w \cdot\ddot{x}=-P_x-F \]
+\[ \hat{j}:0=N-P_y-m_wg \]&lt;/p&gt;
+
+&lt;p&gt;Angular acceleration of rod&lt;/p&gt;
+
+&lt;p&gt;\[ I_r\ddot{\theta}=-\tau + P_yL\sin \theta+P_xL\cos \theta \]&lt;/p&gt;
+
+&lt;p&gt;Linear acceleration of rod C.M.&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \hat{i}&amp;amp;:m_r(\ddot{x}-\ddot{\theta}L\cos\theta+\dot{\theta}^2L\sin\theta)=P_x \\
+    \cos\theta \hat{i}+\sin\theta \hat{j}&amp;amp;:m_r(\ddot{x}\cos\theta-\ddot{\theta}L)=-m_rg\sin\theta+P_y\sin\theta+P_x\cos\theta
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;Position of C.M. of rod&lt;/p&gt;
+
+&lt;p&gt;\[ r=x\hat{i}-L\sin\theta\hat{i}+L\cos\theta\hat{j} \]&lt;/p&gt;
+
+&lt;p&gt;Velocity of C.M. of rod&lt;/p&gt;
+
+&lt;p&gt;\[
+    \dot{r}=\dot{x}\hat{i}-\dot{\theta}L\cos\theta\hat{i}-\dot{\theta}L\sin\theta\hat{j}
+\]&lt;/p&gt;
+
+&lt;p&gt;Acceleration of C.M. of rod&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \ddot{r}&amp;amp;=(\ddot{x}-\ddot{\theta}L\cos\theta+
+    \dot{\theta}^2L\sin\theta)\hat{i}-(\ddot{\theta}L\sin\theta+\dot{\theta}^2L\cos\theta)\hat{j}\\
+    &amp;amp;=(\ddot{x}\cos\theta-\ddot{\theta}L)(\cos\hat{i}+\sin\hat{j})-(\ddot{x}\sin\theta+\dot{\theta}^2L)(\cos\hat{j}-\sin\hat{i})
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    &amp;amp;\Rightarrow P_y\sin\theta+P_x\cos\theta=\frac{I_r\ddot{\theta}+\tau}{L}\\
+    &amp;amp;\Rightarrow m_r(\ddot{x}\cos\theta-\ddot{\theta}L)=-m_rg\sin\theta\frac{I_r\ddot{\theta}+\tau}{L}\\
+    &amp;amp;\Rightarrow -(m_rL\cos\theta)\ddot{x}+(I_r+m_rL^2)\ddot{\theta}=m_rgL\sin\theta-\tau
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;and &lt;script type=&quot;math/tex&quot;&gt;P_x=-m_w\ddot{x}-F&lt;/script&gt;,&lt;script type=&quot;math/tex&quot;&gt;F=\frac{-(I_w\ddot{\phi}-\tau)}{R}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    &amp;amp;\Rightarrow m_r(\ddot{x}-\ddot{\theta}L\cos\theta-\dot{\theta}^2L\sin\theta)=-m_w\ddot{x}+\frac{(I_w\ddot{\phi}-\tau)}{R}\\
+    &amp;amp;\Rightarrow I_w\ddot{\phi}-(m_rR+m_wR)\ddot{x}+(m_rRL\cos\theta)\ddot{\theta}=m_rR\dot{\theta}L\sin\theta+\tau
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;No slip condition:&lt;script type=&quot;math/tex&quot;&gt;\ddot{x}=-R\ddot{\phi}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \Rightarrow
+    \begin{cases}
+        (m_rRL\cos\theta)\ddot{\phi}+(I_r+m_rL^2)\ddot{\theta}=m_rgL\sin\theta-\tau\\
+        (I_w+(m_r+m_w)R^2)\ddot{\phi}+(m_rRL\cos\theta)\ddot{\theta}=m_rRL\dot{\theta}^2\sin\theta+\tau
+    \end{cases}
+\end{align}&lt;/p&gt;
 
 &lt;h3 id=&quot;lagrangian-method&quot;&gt;LAGRANGIAN METHOD&lt;/h3&gt;
 
+&lt;p&gt;\begin{cases}
+    \text{K.E. of wheel:}T_w=\frac{1}{2}m_w\dot{x}^2+\frac{1}{2}I_w\dot{\phi}^2\\
+    \text{K.E. of rod:}T_r=\frac{1}{2}m_r(\dot{x}-L\dot{\theta}\cos\theta)^2+
+        \frac{1}{2}m_r(L\dot{\theta}\sin\theta)^2+\frac{1}{2}I_r\dot{\theta}^2\\
+    \text{P.E. :}V=m_rg\cos\theta
+\end{cases}&lt;/p&gt;
+
+&lt;p&gt;using Euler-Lagrange equation&lt;/p&gt;
+
+&lt;p&gt;\[
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{q}}\big)-\frac{\partial\mathcal{L}}{\partial q} \\
+\]&lt;/p&gt;
+
+&lt;p&gt;\[
+    \mathcal{L}=T_w+T_r-V, 
+    q=
+    \begin{pmatrix}
+    x \\
+    \phi \\ 
+    \theta 
+    \end{pmatrix}
+\]&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{x}}\big)-\frac{\partial\mathcal{L}}{\partial x}
+    &amp;amp;=\frac{d}{dt}\big(m_w\dot{x}+m_r(\dot{x}-L\dot{\theta}\cos\theta)\big) \\
+    &amp;amp;=m_w\ddot{x}+m_r\ddot{x}-m_rL\ddot{\theta}\cos\theta+m_rL\dot{\theta}^2\sin\theta=F
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{\phi}}\big)-
+    \frac{\partial\mathcal{L}}{\partial \phi}&amp;amp;=\frac{d}{dt}\big(I_w\dot{\phi}\big) \\
+    &amp;amp;=I_w\ddot{\phi}=\tau-F\cdot R \\
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{\theta}}\big)-
+    \frac{\partial\mathcal{L}}{\partial \theta}
+    &amp;amp;=(-m_rL\cos\theta)\ddot{x}+(I_r+m_rL^2)\ddot{\theta}-m_rgL\sin\theta=-\tau
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \Rightarrow
+    \begin{pmatrix}
+        (m_w+m_r)R^2+I_w &amp;amp;m_rRL\cos\theta \\ 
+        m_rRL\cos\theta &amp;amp; I_r+m_rL^2
+    \end{pmatrix}
+    \begin{pmatrix}
+        \ddot{\phi} \\ 
+        \ddot{\theta}
+    \end{pmatrix} + 
+    \begin{pmatrix}
+        -m_rRL\dot{\theta}^2\sin\theta \\
+        -m_rgL\sin\theta
+    \end{pmatrix} =
+    \begin{pmatrix}
+        \tau \\
+        -\tau
+    \end{pmatrix}
+\end{align}&lt;/p&gt;
+
 &lt;h2 id=&quot;measurement&quot;&gt;MEASUREMENT&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/measurement.png&quot; alt=&quot;measurement&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# unit: MKS&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# W is width, L is length, M is mass&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;W&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#width&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#length&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;M&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#mass&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# I is theoretical inertia, J is pratical inertia&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;W&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;theoretical inertia is {}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;# calculate inertia from period T&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# T is period, A is rotation radius, G is gravity, H is height&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#period&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#radius&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#gravity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;H&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#height&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;J&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;H&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pratical inertia is {}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;J&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;J&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Error is {}&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;car&lt;/th&gt;
+      &lt;th&gt;Rod Inertia&lt;/th&gt;
+      &lt;th&gt;Wheel Inertia&lt;/th&gt;
+      &lt;th&gt;Rod Mass&lt;/th&gt;
+      &lt;th&gt;Wheel Mass&lt;/th&gt;
+      &lt;th&gt;Rod Length&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Big&lt;/td&gt;
+      &lt;td&gt;0.0012&lt;/td&gt;
+      &lt;td&gt;7.8537e-05&lt;/td&gt;
+      &lt;td&gt;0.709&lt;/td&gt;
+      &lt;td&gt;0.087&lt;/td&gt;
+      &lt;td&gt;0.0412&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Small&lt;/td&gt;
+      &lt;td&gt;5.3493e-04&lt;/td&gt;
+      &lt;td&gt;3.4951e-05&lt;/td&gt;
+      &lt;td&gt;0.367&lt;/td&gt;
+      &lt;td&gt;0.042&lt;/td&gt;
+      &lt;td&gt;0.0175&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;(units: MKS)&lt;/p&gt;
 
 &lt;h2 id=&quot;simulation&quot;&gt;SIMULATION&lt;/h2&gt;
 
 &lt;h3 id=&quot;state-space&quot;&gt;STATE SPACE&lt;/h3&gt;
 
+&lt;p&gt;After linearization with &lt;script type=&quot;math/tex&quot;&gt;\cos\theta \approx 1, \sin\theta \approx \theta, \dot{\theta}^2 \approx 0&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    &amp;amp;\big((I_r+m_rL^2)[(m_w+m_r)R^2+I_w]-(m_rRL)^2\big)\ddot{\phi} \\
+    &amp;amp;=[(I_r+m_rL^2)+m_rRL]\tau-(m_rRL)m_rgL\theta \\ \\
+    &amp;amp;\ddot{\phi}=\frac{m_r^2L^2Rg}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}\theta \\
+    &amp;amp;+\frac{-(I_r+m_rL^2+m_rRL)}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}\tau \\ \\
+    &amp;amp;\big[(m_rRL)^2-\big((m_w+m_r)R^2+I_w\big)(I_r+m_r   L^2)\big]\ddot{\theta} \\
+    &amp;amp;=\big(m_rRL+(m_w+m_r)R^2+I_w\big)\tau-\big((m_w+m_r)R^2+I_w\big)m_rgL\theta \\ \\
+    &amp;amp;\ddot{\theta}=\frac{\big(I_w+(m_w+m_r)R^2\big)m_rgL}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r L^2)-(m_rRL)^2}\theta \\
+    &amp;amp;+\frac{-\big(m_rRL+(I_w+(m_w+m_r)R^2)\big)}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r    L^2)-(m_rRL)^2}\tau
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;Let &lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt; as input &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt;, with states &lt;script type=&quot;math/tex&quot;&gt;\phi, \dot{\phi}, \theta, \dot{\theta}&lt;/script&gt;, and the system is&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    \dot{x}&amp;amp;=Ax+Bu \\
+    y&amp;amp;=Cx+Du
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+    A&amp;amp;=
+    \begin{bmatrix}
+        0 &amp;amp; 1 &amp;amp; 0                                                                                         &amp;amp; 0 \\
+        0 &amp;amp; 0 &amp;amp; \frac{m_r^2L^2Rg}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}                               &amp;amp; 0 \\
+        0 &amp;amp; 0 &amp;amp; 0                                                                                         &amp;amp; 1 \\
+        0 &amp;amp; 0 &amp;amp; \frac{\big(I_w+(m_w+m_r)R^2\big)m_rgL}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r L^2)-(m_rRL)^2} &amp;amp; 0
+    \end{bmatrix} \\
+    B&amp;amp;=
+    \begin{bmatrix}
+        0 \\
+        \frac{-(I_r+m_rL^2+m_rRL)}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]} \\
+        0 \\
+        \frac{-\big(m_rRL+(I_w+(m_w+m_r)R^2)\big)}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r	L^2)-(m_rRL)^2}
+    \end{bmatrix} \\
+    C&amp;amp;=
+    \begin{bmatrix}
+        1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\
+        0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0
+    \end{bmatrix}\\
+    D&amp;amp;=
+    \begin{bmatrix}
+        0 \\
+        0
+    \end{bmatrix}
+\end{align}&lt;/p&gt;
+
 &lt;h3 id=&quot;transfer-function&quot;&gt;TRANSFER FUNCTION&lt;/h3&gt;
+
+&lt;p&gt;Orignal PID control block diagram&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-1.png&quot; alt=&quot;PID-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After rearrange&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-2.png&quot; alt=&quot;PID-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus get the transfer function of the controlled system&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-3.png&quot; alt=&quot;PID-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plug in ideal motor model&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/ideal-motor-model.png&quot; alt=&quot;ideal-motor-model&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we have the complete transfer function&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-4.png&quot; alt=&quot;PID-4&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png&quot; title=&quot;PID-response-1&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png&quot; title=&quot;PID-response-2&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;PID response
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
 
 &lt;h2 id=&quot;implementation&quot;&gt;IMPLEMENTATION&lt;/h2&gt;
 
 &lt;h3 id=&quot;hardware&quot;&gt;HARDWARE&lt;/h3&gt;
 
-&lt;h3 id=&quot;schematics&quot;&gt;SCHEMATICS&lt;/h3&gt;
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD.png&quot; title=&quot;CAD&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD.png&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Onshape CAD Model of Small Car
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure class=&quot;third &quot;&gt;
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/7697.jpg&quot; title=&quot;LinkIt 7697&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/7697.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/L293D.jpg&quot; title=&quot;L293D Motor Driver IC&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/L293D.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/MPU6050.jpg&quot; title=&quot;IMU Sensor MPU6050&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/MPU6050.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;Electronic Components
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;schematics&quot;&gt;Schematics&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/schematics.png&quot; alt=&quot;schematics&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;diagram&quot;&gt;Diagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/diagram.png&quot; alt=&quot;diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;videos&quot;&gt;VIDEOS&lt;/h2&gt;
 
@@ -145,7 +466,50 @@ Media Transfer Protocol.&lt;/p&gt;
 
 &lt;h2 id=&quot;analysis&quot;&gt;ANALYSIS&lt;/h2&gt;
 
-&lt;h2 id=&quot;machine-learning&quot;&gt;MACHINE LEARNING&lt;/h2&gt;
+&lt;h3 id=&quot;angle&quot;&gt;Angle&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-analysis.png&quot; alt=&quot;angle-analysis&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;angle-rate&quot;&gt;Angle Rate&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-rate-analysis.png&quot; alt=&quot;angle-rate-analysis&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;angle-sum&quot;&gt;Angle Sum&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-sum-analysis.png&quot; alt=&quot;angle-sum-analysis&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;futurework-machine-learning&quot;&gt;FUTUREWORK: MACHINE LEARNING&lt;/h2&gt;
+
+&lt;p&gt;Ideal vs Practical&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Continuous vs Discrete&lt;/li&gt;
+  &lt;li&gt;Inaccurate IMU Angle&lt;/li&gt;
+  &lt;li&gt;Ideal Motor Model&lt;/li&gt;
+  &lt;li&gt;Measurement Error&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;half &quot;&gt;
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png&quot; title=&quot;DDPG-model&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+    
+      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif&quot; alt=&quot;&quot; /&gt;
+      &lt;/a&gt;
+    
+  
+  
+    &lt;figcaption&gt;DDPG
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/ML-diagram.png&quot; alt=&quot;ML-diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reference&quot;&gt;REFERENCE&lt;/h2&gt;
 
@@ -154,6 +518,8 @@ Media Transfer Protocol.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/mechanical-engineering/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/lecture-notes/lec19.pdf&quot;&gt;MIT OCW Linear Quadratic Regulator&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-30-feedback-control-systems-fall-2010/lecture-notes/MIT16_30F10_lec18.pdf&quot;&gt;MIT OCW Feedback Control&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1509.02971&quot;&gt;Continuous control with deep reinforcement learning&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Measurement of moment of inertia: Katsuhiko Ogata(2004). System Dynamics (4th ed). pp.82-83 New Jersey:Pearson&lt;/p&gt;
 
@@ -175,15 +541,21 @@ Media Transfer Protocol.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#implementation&quot; id=&quot;markdown-toc-implementation&quot;&gt;IMPLEMENTATION&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#hardware&quot; id=&quot;markdown-toc-hardware&quot;&gt;HARDWARE&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#schematics&quot; id=&quot;markdown-toc-schematics&quot;&gt;SCHEMATICS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#schematics&quot; id=&quot;markdown-toc-schematics&quot;&gt;Schematics&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#diagram&quot; id=&quot;markdown-toc-diagram&quot;&gt;Diagram&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#videos&quot; id=&quot;markdown-toc-videos&quot;&gt;VIDEOS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#analysis&quot; id=&quot;markdown-toc-analysis&quot;&gt;ANALYSIS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#machine-learning&quot; id=&quot;markdown-toc-machine-learning&quot;&gt;MACHINE LEARNING&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#analysis&quot; id=&quot;markdown-toc-analysis&quot;&gt;ANALYSIS&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#angle&quot; id=&quot;markdown-toc-angle&quot;&gt;Angle&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#angle-rate&quot; id=&quot;markdown-toc-angle-rate&quot;&gt;Angle Rate&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#angle-sum&quot; id=&quot;markdown-toc-angle-sum&quot;&gt;Angle Sum&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#futurework-machine-learning&quot; id=&quot;markdown-toc-futurework-machine-learning&quot;&gt;FUTUREWORK: MACHINE LEARNING&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#reference&quot; id=&quot;markdown-toc-reference&quot;&gt;REFERENCE&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html"></summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!
 Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><summary type="html">Test! Test2!</summary></entry></feed>
