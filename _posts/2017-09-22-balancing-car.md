@@ -73,14 +73,26 @@ This is a project about the self-balancing car.
 
 ## ROBOTS
 
+There are two version of robot car, right one is is 1st ver. robot car in big size, 
+operating in 12V, but since it's so bulky to balance itself, so there is the 2nd ver. in small size, 
+which is small, compact, modolarized and easy to train and verified the control theorem.
+
 {% include gallery id="gallery1" caption="Big car and small car." %}
 
 
 ## PHYSICAL MODEL
 
-We can part
+The robot which is equivalent to a inveted pendulum consists of two parts, the rod and the wheel.
+The goal is to drive the wheel properly to prevent tilting, 
+so we have to calculate the relative inertial force casued by the acceleration of wheel.
+
+Following pictures are the Free Body Diagram of the two part, rod and wheel.
 
 {% include gallery id="gallery2" caption="Free Body Diagram of **rod** and **wheel**. " %}
+
+There are two method to deal with the model, 
+one is the classical way in Newton Physics, 
+another one is using Lagrangian method, i.e. energy method.
 
 ### NEWTON METHOD
 
@@ -208,7 +220,20 @@ using Euler-Lagrange equation
 
 ## MEASUREMENT
 
+To obtain the physical parameter of the car, 
+we have to measure the some important element derived in above equaitons.
+
+The weight of the robot can be obtained easily by weighing on a platform scale, 
+and the length and width are given in designed CAD.
+
+But there is no direct method to measure the momentum inertia, 
+so we have to set up an experiment like the following picture, 
+hanging the robot by two wires and measure the spin period, 
+and derive the theoretical momentum inertia.
+
 ![measurement]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/measurement.png)
+
+And the following is simple python code used to compute the inertia.
 
 ```python
 
@@ -243,6 +268,7 @@ error = (J-I)/I*100
 print("Error is {}%".format(error))
 ```
 
+Finally, we got the table of desired parameter.
 
 | car   | Rod Inertia | Wheel Inertia | Rod Mass | Wheel Mass | Rod Length |
 |-------|-------------|---------------|----------|------------|------------|
@@ -255,6 +281,10 @@ print("Error is {}%".format(error))
 
 
 ## SIMULATION
+
+At the simulation part, we discuss about the control model applied on the robot, 
+there are two aspects on the model, one is state space in modern control, 
+anthor one is transfer fucntion in classical control.
 
 ### STATE SPACE
 
@@ -321,7 +351,7 @@ Thus get the transfer function of the controlled system
 
 ![PID-3]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/PID-3.png)
 
-Plug in ideal motor model
+Plug in the ideal motor model to approximate the true model
 
 ![ideal-motor-model]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/ideal-motor-model.png)
 
@@ -333,6 +363,11 @@ Then we have the complete transfer function
 
 
 ## IMPLEMENTATION
+
+The robot car is designed in Onshape CAD and made of laser-cutted acrylic board, 
+and the main controller is LinkIt 7697 which is much powerful then Arduino board.
+
+To keep balance, it's needed to add an IMU(inertia measurement unit) to monitor the linear accelertaion and angular velocity.
 
 ### HARDWARE
 
@@ -346,6 +381,10 @@ Then we have the complete transfer function
 
 ### Diagram
 
+The following diagram shows the structure of the whole implementation of the robot car, 
+some difficult works are the conversion from continuous model to discrete computation on the micro controller, 
+and the correction of the derived angle by adding some filter like compimentary filter/Kalman filter.
+
 ![diagram]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/diagram.png)
 
 
@@ -356,6 +395,9 @@ Then we have the complete transfer function
 ![big-car]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/big-car.gif)
 
 ## ANALYSIS
+
+The controller 7697 has the ability to transfer the recording data to computer for analysis, 
+the following pictures are recorded data while small car balancing with PID control.
 
 ### Angle
 
@@ -369,19 +411,36 @@ Then we have the complete transfer function
 
 ![angle-sum-analysis]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/angle-sum-analysis.png)
 
-## FUTUREWORK: MACHINE LEARNING
 
+## FUTUREWORK: MACHINE LEARNING
 
 Ideal vs Practical
 
-1. Continuous vs Discrete
+1. Continuous vs Discrete on computation
 2. Inaccurate IMU Angle 
-3. Ideal Motor Model
+3. Ideal Motor Model is not good enough
 4. Measurement Error
+
+Since the classical method on controlling problem depends on the accurancy of physical parameter and a stable environment, 
+maybe we can have a different way to deal with this kind of problem.
+
+A powerful tool on dealing with continuos control problem is to use RL(Reinforcement Learning), 
+the following simulation is used the [DDPG(Deep Determinlistic Policy Gradient)][4]
+to balance a inverted pendulum in a custom OpenAI GYM environment.
+
+To have more detail on the simulation, you can refer this [report][5]
+
 
 {% include gallery id="gallery5" caption="DDPG" %}
 
+
+The following is the diagram for balancing car under maching learning
+
 ![ML-diagram]({{ site.url }}{{ site.baseurl }}/assets/images/balancing-car/ML-diagram.png)
+
+So far, there are still some works to implement the RL algorithm on the robot car, 
+including the wireless data transformission(the C++ [library][6] is under developed), and the learnging environment of the robot 
+still need some improvement, so there's still a long way to go.
 
 ## REFERENCE
 
@@ -398,6 +457,8 @@ Ideal vs Practical
 [2]:https://ocw.mit.edu/courses/mechanical-engineering/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/lecture-notes/lec19.pdf
 [3]:https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-30-feedback-control-systems-fall-2010/lecture-notes/MIT16_30F10_lec18.pdf
 [4]:https://arxiv.org/abs/1509.02971
+[5]:https://drive.google.com/open?id=0B0HNqd_8V0OlNFRQUmg0dl9RMzQ
+[6]:https://github.com/YuanYuYuan/balancing-robot/tree/master/libs/DataTransimission
 
 Measurement of moment of inertia: Katsuhiko Ogata(2004). System Dynamics (4th ed). pp.82-83 New Jersey:Pearson
 
