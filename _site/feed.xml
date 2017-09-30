@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-09-27T23:44:39+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-10-01T00:29:22+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Using MathJax to display TeX on Jekyll</title><link href="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="alternate" type="text/html" title="Using MathJax to display TeX on Jekyll" /><published>2017-09-30T00:00:00+08:00</published><updated>2017-09-30T00:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/">&lt;p&gt;Sometimes we may need to some math equations on posts, 
+using LaTeX is the best way but not works on markdown,
+so we have to import additional tool to deal with it.&lt;/p&gt;
+
+&lt;p&gt;A recommended way is using MathJax, 
+which is an open-source JavaScript display engine for LaTex, MathML, AsciiMath, 
+and it works in all modern browsers.&lt;/p&gt;
+
+&lt;p&gt;This is the &lt;a href=&quot;http://docs.mathjax.org/en/latest/index.html&quot;&gt;official document of MathJax&lt;/a&gt;, 
+and the source &lt;a href=&quot;https://github.com/mathjax/MathJax&quot;&gt;mathjax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;usage-on-jekyll&quot;&gt;Usage on Jekyll&lt;/h2&gt;
+
+&lt;p&gt;To use MathJax in CDN(Coneten Delivery Network) mode is very easy.&lt;/p&gt;
+
+&lt;p&gt;Just add the following tag in the markdown and it will trigger cdnjs automatically.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And for avoiding adding this annoying tag every time, 
+one can add this scripts.html to folder &lt;strong&gt;_includes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&amp;lt;script type=&quot;text/javascript&quot; async
+  src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then we just need to add &lt;strong&gt;mathjax:true&lt;/strong&gt; at the YAML Front Matter of the post.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Using&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MathJax&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;TeX&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;teaser&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Photo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;credit:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[**Unsplash**](https://unsplash.com)&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;TeX&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;div class=&quot;language-tex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;begin&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;align&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}&amp;amp;&lt;/span&gt;=Ax+Bu &lt;span class=&quot;k&quot;&gt;\\\
+    &lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;=Cx+Du
+&lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;end&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;align&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;\begin{align}
+    \dot{x}&amp;amp;=Ax+Bu \\
+    y&amp;amp;=Cx+Du
+\end{align}&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Jekyll" /><category term="TeX" /><summary type="html">Sometimes we may need to some math equations on posts, using LaTeX is the best way but not works on markdown, so we have to import additional tool to deal with it.</summary></entry><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
 we have to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;, 
 Media Transfer Protocol.&lt;/p&gt;
 
@@ -616,4 +677,4 @@ still need some improvement, so there’s still a long way to go.&lt;/p&gt;
 
   &lt;/nav&gt;
 &lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!
-Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><summary type="html">Test! Test2!</summary></entry></feed>
+Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><category term="jekyll" /><summary type="html">Test! Test2!</summary></entry></feed>

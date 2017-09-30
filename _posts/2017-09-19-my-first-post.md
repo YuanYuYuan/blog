@@ -4,6 +4,7 @@ categories:
   - Diary
 tags:
   - minimal-mistakes
+  - jekyll
 ---
 
 Test!
