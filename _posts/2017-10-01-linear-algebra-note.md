@@ -1,14 +1,13 @@
 ---
 title: "Note of Linear Algebra"
 header:
-  teaser: /assets/images/unsplash-3.jpg
-  header_image: /assets/images/unsplash-3.jpg
+  teaser: /assets/images/unsplash-4.jpg
+  overlay_image: /assets/images/unsplash-4.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - math
 tags:
   - Linear Algebra
-mathjax: true
 ---
 
 ## Changes
