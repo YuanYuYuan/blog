@@ -1,0 +1,1164 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.6.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Balancing Car - Yuan’s blog</title>
+
+
+
+
+<meta name="description" content="This is a project about the self-balancing car.">
+
+
+
+
+<meta name="author" content="Yuan Yu Yuan">
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Yuan's blog">
+<meta property="og:title" content="Balancing Car">
+
+
+  <link rel="canonical" href="http://localhost:4000/blog/robot/balancing-car/">
+  <meta property="og:url" content="http://localhost:4000/blog/robot/balancing-car/">
+
+
+
+  <meta property="og:description" content="This is a project about the self-balancing car.">
+
+
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/blog/assets/images/unsplash-1.jpg">
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-09-22T00:00:00+08:00">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Yuan's blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/blog/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/blog/">Yuan's blog</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/year-archive/">Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/categories/">Categories</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('http://localhost:4000/blog/assets/images/unsplash-1.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">
+        
+          Balancing Car
+
+        
+      </h1>
+      
+        <p class="page__lead">This is a project about the self-balancing car.
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/blog/assets/images/bio-photo.jpg" class="author__avatar" alt="Yuan Yu Yuan" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Yuan Yu Yuan</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Someone who likes Linux, robot and math
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Taiwan</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:az6980522@gmail.com">
+            <meta itemprop="email" content="az6980522@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/YuanYuYuan" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://gitlab.com/YuanYuYuan" itemprop="sameAs">
+            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        
+          <li>
+            <a href="https://www.youtube.com/channel/UCHoFSmS_Gr5Og29pQv4ctwA" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Balancing Car">
+    <meta itemprop="description" content="This is a project about the self-balancing car.">
+    <meta itemprop="datePublished" content="September 22, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        <p>This is a project about the self-balancing car.</p>
+
+<h2 id="robots">ROBOTS</h2>
+
+<p>There are two version of robot car, right one is is 1st ver. robot car in big size, 
+operating in 12V, but since it’s so bulky to balance itself, so there is the 2nd ver. in small size, 
+which is small, compact, modolarized and easy to train and verified the control theorem.</p>
+
+<figure class="half ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/small-car.jpg" title="Small Car">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/small-car.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/big-car.png" title="Big Car">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/big-car.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Big car and small car.
+</figcaption>
+  
+</figure>
+
+<h2 id="physical-model">PHYSICAL MODEL</h2>
+
+<p>The robot which is equivalent to a inveted pendulum consists of two parts, the rod and the wheel.
+The goal is to drive the wheel properly to prevent tilting, 
+so we have to calculate the relative inertial force casued by the acceleration of wheel.</p>
+
+<p>Following pictures are the Free Body Diagram of the two part, rod and wheel.</p>
+
+<figure class="third ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/small-car-side-view.jpg" title="Side view of small car">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/small-car-side-view.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png" title="Free Body Diagram of rod">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/FBD-wheel.png" title="Free Body Diagram of Wheel">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/FBD-wheel.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Free Body Diagram of <strong>rod</strong> and <strong>wheel</strong>.
+</figcaption>
+  
+</figure>
+
+<p>There are two method to deal with the model, 
+one is the classical way in Newton Physics, 
+another one is using Lagrangian method, i.e. energy method.</p>
+
+<h3 id="newton-method">NEWTON METHOD</h3>
+
+<p>Angular acceleration of wheel</p>
+
+<p>\[ I\omega \ddot{\phi}=\tau -F\cdot R \]</p>
+
+<p>Linear acceleration of wheel C.M.</p>
+
+<p>\[ \hat{i}:m_w \cdot\ddot{x}=-P_x-F \]
+\[ \hat{j}:0=N-P_y-m_wg \]</p>
+
+<p>Angular acceleration of rod</p>
+
+<p>\[ I_r\ddot{\theta}=-\tau + P_yL\sin \theta+P_xL\cos \theta \]</p>
+
+<p>Linear acceleration of rod C.M.</p>
+
+<p>\begin{align}
+    \hat{i}&amp;:m_r(\ddot{x}-\ddot{\theta}L\cos\theta+\dot{\theta}^2L\sin\theta)=P_x \\
+    \cos\theta \hat{i}+\sin\theta \hat{j}&amp;:m_r(\ddot{x}\cos\theta-\ddot{\theta}L)=-m_rg\sin\theta+P_y\sin\theta+P_x\cos\theta
+\end{align}</p>
+
+<p>Position of C.M. of rod</p>
+
+<p>\[ r=x\hat{i}-L\sin\theta\hat{i}+L\cos\theta\hat{j} \]</p>
+
+<p>Velocity of C.M. of rod</p>
+
+<p>\[
+    \dot{r}=\dot{x}\hat{i}-\dot{\theta}L\cos\theta\hat{i}-\dot{\theta}L\sin\theta\hat{j}
+\]</p>
+
+<p>Acceleration of C.M. of rod</p>
+
+<p>\begin{align}
+    \ddot{r}&amp;=(\ddot{x}-\ddot{\theta}L\cos\theta+
+    \dot{\theta}^2L\sin\theta)\hat{i}-(\ddot{\theta}L\sin\theta+\dot{\theta}^2L\cos\theta)\hat{j}\\
+    &amp;=(\ddot{x}\cos\theta-\ddot{\theta}L)(\cos\hat{i}+\sin\hat{j})-(\ddot{x}\sin\theta+\dot{\theta}^2L)(\cos\hat{j}-\sin\hat{i})
+\end{align}</p>
+
+<p>\begin{align}
+    &amp;\Rightarrow P_y\sin\theta+P_x\cos\theta=\frac{I_r\ddot{\theta}+\tau}{L}\\
+    &amp;\Rightarrow m_r(\ddot{x}\cos\theta-\ddot{\theta}L)=-m_rg\sin\theta\frac{I_r\ddot{\theta}+\tau}{L}\\
+    &amp;\Rightarrow -(m_rL\cos\theta)\ddot{x}+(I_r+m_rL^2)\ddot{\theta}=m_rgL\sin\theta-\tau
+\end{align}</p>
+
+<p>and <script type="math/tex">P_x=-m_w\ddot{x}-F</script>,<script type="math/tex">F=\frac{-(I_w\ddot{\phi}-\tau)}{R}</script></p>
+
+<p>\begin{align}
+    &amp;\Rightarrow m_r(\ddot{x}-\ddot{\theta}L\cos\theta-\dot{\theta}^2L\sin\theta)=-m_w\ddot{x}+\frac{(I_w\ddot{\phi}-\tau)}{R}\\
+    &amp;\Rightarrow I_w\ddot{\phi}-(m_rR+m_wR)\ddot{x}+(m_rRL\cos\theta)\ddot{\theta}=m_rR\dot{\theta}L\sin\theta+\tau
+\end{align}</p>
+
+<p>No slip condition:<script type="math/tex">\ddot{x}=-R\ddot{\phi}</script></p>
+
+<p>\begin{align}
+    \Rightarrow
+    \begin{cases}
+        (m_rRL\cos\theta)\ddot{\phi}+(I_r+m_rL^2)\ddot{\theta}=m_rgL\sin\theta-\tau\\
+        (I_w+(m_r+m_w)R^2)\ddot{\phi}+(m_rRL\cos\theta)\ddot{\theta}=m_rRL\dot{\theta}^2\sin\theta+\tau
+    \end{cases}
+\end{align}</p>
+
+<h3 id="lagrangian-method">LAGRANGIAN METHOD</h3>
+
+<p>\begin{cases}
+    \text{K.E. of wheel:}T_w=\frac{1}{2}m_w\dot{x}^2+\frac{1}{2}I_w\dot{\phi}^2\\
+    \text{K.E. of rod:}T_r=\frac{1}{2}m_r(\dot{x}-L\dot{\theta}\cos\theta)^2+
+        \frac{1}{2}m_r(L\dot{\theta}\sin\theta)^2+\frac{1}{2}I_r\dot{\theta}^2\\
+    \text{P.E. :}V=m_rg\cos\theta
+\end{cases}</p>
+
+<p>using Euler-Lagrange equation</p>
+
+<p>\[
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{q}}\big)-\frac{\partial\mathcal{L}}{\partial q} \\
+\]</p>
+
+<p>\[
+    \mathcal{L}=T_w+T_r-V, 
+    q=
+    \begin{pmatrix}
+    x \\
+    \phi \\ 
+    \theta 
+    \end{pmatrix}
+\]</p>
+
+<p>\begin{align}
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{x}}\big)-\frac{\partial\mathcal{L}}{\partial x}
+    &amp;=\frac{d}{dt}\big(m_w\dot{x}+m_r(\dot{x}-L\dot{\theta}\cos\theta)\big) \\
+    &amp;=m_w\ddot{x}+m_r\ddot{x}-m_rL\ddot{\theta}\cos\theta+m_rL\dot{\theta}^2\sin\theta=F
+\end{align}</p>
+
+<p>\begin{align}
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{\phi}}\big)-
+    \frac{\partial\mathcal{L}}{\partial \phi}&amp;=\frac{d}{dt}\big(I_w\dot{\phi}\big) \\
+    &amp;=I_w\ddot{\phi}=\tau-F\cdot R \\
+    \frac{d}{dt}\big(\frac{\partial \mathcal{L}}{\partial \dot{\theta}}\big)-
+    \frac{\partial\mathcal{L}}{\partial \theta}
+    &amp;=(-m_rL\cos\theta)\ddot{x}+(I_r+m_rL^2)\ddot{\theta}-m_rgL\sin\theta=-\tau
+\end{align}</p>
+
+<p>\begin{align}
+    \Rightarrow
+    \begin{pmatrix}
+        (m_w+m_r)R^2+I_w &amp;m_rRL\cos\theta \\ 
+        m_rRL\cos\theta &amp; I_r+m_rL^2
+    \end{pmatrix}
+    \begin{pmatrix}
+        \ddot{\phi} \\ 
+        \ddot{\theta}
+    \end{pmatrix} + 
+    \begin{pmatrix}
+        -m_rRL\dot{\theta}^2\sin\theta \\
+        -m_rgL\sin\theta
+    \end{pmatrix} =
+    \begin{pmatrix}
+        \tau \\
+        -\tau
+    \end{pmatrix}
+\end{align}</p>
+
+<h2 id="measurement">MEASUREMENT</h2>
+
+<p>To obtain the physical parameter of the car, 
+we have to measure the some important element derived in above equaitons.</p>
+
+<p>The weight of the robot can be obtained easily by weighing on a platform scale, 
+and the length and width are given in designed CAD.</p>
+
+<p>But there is no direct method to measure the momentum inertia, 
+so we have to set up an experiment like the following picture, 
+hanging the robot by two wires and measure the spin period, 
+and derive the theoretical momentum inertia.</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/measurement.png" alt="measurement" /></p>
+
+<p>And the following is simple python code used to compute the inertia.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="c"># unit: MKS</span>
+
+<span class="c"># W is width, L is length, M is mass</span>
+<span class="n">W</span> <span class="o">=</span> <span class="c">#width</span>
+<span class="n">L</span> <span class="o">=</span> <span class="c">#length</span>
+<span class="n">M</span> <span class="o">=</span> <span class="c">#mass</span>
+
+<span class="c"># I is theoretical inertia, J is pratical inertia</span>
+
+<span class="n">I</span> <span class="o">=</span> <span class="n">M</span><span class="o">/</span><span class="mi">12</span><span class="o">*</span><span class="p">(</span><span class="n">W</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"theoretical inertia is {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">I</span><span class="p">))</span>
+
+
+<span class="c"># calculate inertia from period T</span>
+<span class="c"># T is period, A is rotation radius, G is gravity, H is height</span>
+<span class="n">T</span> <span class="o">=</span> <span class="c">#period</span>
+<span class="n">A</span> <span class="o">=</span> <span class="c">#radius</span>
+<span class="n">G</span> <span class="o">=</span> <span class="c">#gravity</span>
+<span class="n">H</span> <span class="o">=</span> <span class="c">#height</span>
+
+<span class="n">J</span> <span class="o">=</span> <span class="p">(</span><span class="n">T</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">A</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">M</span><span class="o">*</span><span class="n">G</span><span class="o">/</span><span class="n">H</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"pratical inertia is {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">J</span><span class="p">))</span>
+
+
+<span class="n">error</span> <span class="o">=</span> <span class="p">(</span><span class="n">J</span><span class="o">-</span><span class="n">I</span><span class="p">)</span><span class="o">/</span><span class="n">I</span><span class="o">*</span><span class="mi">100</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Error is {}</span><span class="si">%</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>Finally, we got the table of desired parameter.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>car</th>
+      <th>Rod Inertia</th>
+      <th>Wheel Inertia</th>
+      <th>Rod Mass</th>
+      <th>Wheel Mass</th>
+      <th>Rod Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Big</td>
+      <td>0.0012</td>
+      <td>7.8537e-05</td>
+      <td>0.709</td>
+      <td>0.087</td>
+      <td>0.0412</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>5.3493e-04</td>
+      <td>3.4951e-05</td>
+      <td>0.367</td>
+      <td>0.042</td>
+      <td>0.0175</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(units: MKS)</p>
+
+<h2 id="simulation">SIMULATION</h2>
+
+<p>At the simulation part, we discuss about the control model applied on the robot, 
+there are two aspects on the model, one is state space in modern control, 
+anthor one is transfer fucntion in classical control.</p>
+
+<h3 id="state-space">STATE SPACE</h3>
+
+<p>After linearization with <script type="math/tex">\cos\theta \approx 1, \sin\theta \approx \theta, \dot{\theta}^2 \approx 0</script></p>
+
+<p>\begin{align}
+    &amp;\big((I_r+m_rL^2)[(m_w+m_r)R^2+I_w]-(m_rRL)^2\big)\ddot{\phi} \\
+    &amp;=[(I_r+m_rL^2)+m_rRL]\tau-(m_rRL)m_rgL\theta \\ \\
+    &amp;\ddot{\phi}=\frac{m_r^2L^2Rg}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}\theta \\
+    &amp;+\frac{-(I_r+m_rL^2+m_rRL)}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}\tau \\ \\
+    &amp;\big[(m_rRL)^2-\big((m_w+m_r)R^2+I_w\big)(I_r+m_r   L^2)\big]\ddot{\theta} \\
+    &amp;=\big(m_rRL+(m_w+m_r)R^2+I_w\big)\tau-\big((m_w+m_r)R^2+I_w\big)m_rgL\theta \\ \\
+    &amp;\ddot{\theta}=\frac{\big(I_w+(m_w+m_r)R^2\big)m_rgL}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r L^2)-(m_rRL)^2}\theta \\
+    &amp;+\frac{-\big(m_rRL+(I_w+(m_w+m_r)R^2)\big)}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r    L^2)-(m_rRL)^2}\tau
+\end{align}</p>
+
+<p>Let <script type="math/tex">\tau</script> as input <script type="math/tex">u</script>, with states <script type="math/tex">\phi, \dot{\phi}, \theta, \dot{\theta}</script>, and the system is</p>
+
+<p>\begin{align}
+    \dot{x}&amp;=Ax+Bu \\
+    y&amp;=Cx+Du
+\end{align}</p>
+
+<p>where</p>
+
+<p>\begin{align}
+    A&amp;=
+    \begin{bmatrix}
+        0 &amp; 1 &amp; 0                                                                                         &amp; 0 \\
+        0 &amp; 0 &amp; \frac{m_r^2L^2Rg}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]}                               &amp; 0 \\
+        0 &amp; 0 &amp; 0                                                                                         &amp; 1 \\
+        0 &amp; 0 &amp; \frac{\big(I_w+(m_w+m_r)R^2\big)m_rgL}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r L^2)-(m_rRL)^2} &amp; 0
+    \end{bmatrix} \\
+    B&amp;=
+    \begin{bmatrix}
+        0 \\
+        \frac{-(I_r+m_rL^2+m_rRL)}{(m_rRL)^2-(I_r+m_rL^2)[I_w+(m_w+m_r)R^2]} \\
+        0 \\
+        \frac{-\big(m_rRL+(I_w+(m_w+m_r)R^2)\big)}{\big(I_w+(m_w+m_r)R^2\big)(I_r+m_r	L^2)-(m_rRL)^2}
+    \end{bmatrix} \\
+    C&amp;=
+    \begin{bmatrix}
+        1 &amp; 0 &amp; 0 &amp; 0 \\
+        0 &amp; 0 &amp; 1 &amp; 0
+    \end{bmatrix}\\
+    D&amp;=
+    \begin{bmatrix}
+        0 \\
+        0
+    \end{bmatrix}
+\end{align}</p>
+
+<h3 id="transfer-function">TRANSFER FUNCTION</h3>
+
+<p>Orignal PID control block diagram</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/PID-1.png" alt="PID-1" /></p>
+
+<p>After rearrange</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/PID-2.png" alt="PID-2" /></p>
+
+<p>Thus get the transfer function of the controlled system</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/PID-3.png" alt="PID-3" /></p>
+
+<p>Plug in the ideal motor model to approximate the true model</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/ideal-motor-model.png" alt="ideal-motor-model" /></p>
+
+<p>Then we have the complete transfer function</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/PID-4.png" alt="PID-4" /></p>
+
+<figure class="half ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png" title="PID-response-1">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png" title="PID-response-2">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>PID response
+</figcaption>
+  
+</figure>
+
+<h2 id="implementation">IMPLEMENTATION</h2>
+
+<p>The robot car is designed in Onshape CAD and made of laser-cutted acrylic board, 
+and the main controller is LinkIt 7697 which is much powerful then Arduino board.</p>
+
+<p>To keep balance, it’s needed to add an IMU(inertia measurement unit) to monitor the linear accelertaion and angular velocity.</p>
+
+<h3 id="hardware">HARDWARE</h3>
+
+<figure class="half ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/CAD.png" title="CAD">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/CAD.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png" title="CAD Explosion">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Onshape CAD Model of Small Car
+</figcaption>
+  
+</figure>
+
+<figure class="third ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/7697.jpg" title="LinkIt 7697">
+        <img src="http://localhost:4000/blog/assets/images/7697.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/L293D.jpg" title="L293D Motor Driver IC">
+        <img src="http://localhost:4000/blog/assets/images/L293D.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/MPU6050.jpg" title="IMU Sensor MPU6050">
+        <img src="http://localhost:4000/blog/assets/images/MPU6050.jpg" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>Electronic Components
+</figcaption>
+  
+</figure>
+
+<h3 id="schematics">Schematics</h3>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/schematics.png" alt="schematics" /></p>
+
+<h3 id="diagram">Diagram</h3>
+
+<p>The following diagram shows the structure of the whole implementation of the robot car, 
+some difficult works are the conversion from continuous model to discrete computation on the micro controller, 
+and the correction of the derived angle by adding some filter like compimentary filter/Kalman filter.</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/diagram.png" alt="diagram" /></p>
+
+<h2 id="videos">VIDEOS</h2>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/small-car.gif" alt="small-car" /></p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/big-car.gif" alt="big-car" /></p>
+
+<h2 id="analysis">ANALYSIS</h2>
+
+<p>The controller 7697 has the ability to transfer the recording data to computer for analysis, 
+the following pictures are recorded data while small car balancing with PID control.</p>
+
+<h3 id="angle">Angle</h3>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/angle-analysis.png" alt="angle-analysis" /></p>
+
+<h3 id="angle-rate">Angle Rate</h3>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/angle-rate-analysis.png" alt="angle-rate-analysis" /></p>
+
+<h3 id="angle-sum">Angle Sum</h3>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/angle-sum-analysis.png" alt="angle-sum-analysis" /></p>
+
+<h2 id="futurework-machine-learning">FUTUREWORK: MACHINE LEARNING</h2>
+
+<p>Ideal vs Practical</p>
+
+<ol>
+  <li>Continuous vs Discrete on computation</li>
+  <li>Inaccurate IMU Angle</li>
+  <li>Ideal Motor Model is not good enough</li>
+  <li>Measurement Error</li>
+</ol>
+
+<p>Since the classical method on controlling problem depends on the accurancy of physical parameter and a stable environment, 
+maybe we can have a different way to deal with this kind of problem.</p>
+
+<p>A powerful tool on dealing with continuos control problem is to use RL(Reinforcement Learning), 
+the following simulation is used the <a href="https://arxiv.org/abs/1509.02971">DDPG(Deep Determinlistic Policy Gradient)</a>
+to balance a inverted pendulum in a custom OpenAI GYM environment.</p>
+
+<p>To have more detail on the simulation, you can refer this <a href="https://drive.google.com/open?id=0B0HNqd_8V0OlNFRQUmg0dl9RMzQ">report</a></p>
+
+<figure class="half ">
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png" title="DDPG-model">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png" alt="" />
+      </a>
+    
+  
+    
+      <a href="http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif" title="CAD Explosion">
+        <img src="http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif" alt="" />
+      </a>
+    
+  
+  
+    <figcaption>DDPG
+</figcaption>
+  
+</figure>
+
+<p>The following is the diagram for balancing car under maching learning</p>
+
+<p><img src="http://localhost:4000/blog/assets/images/balancing-car/ML-diagram.png" alt="ML-diagram" /></p>
+
+<p>So far, there are still some works to implement the RL algorithm on the robot car, 
+including the wireless data transformission(the C++ <a href="https://github.com/YuanYuYuan/balancing-robot/tree/master/libs/DataTransimission">library</a> is under developed), and the learnging environment of the robot 
+still need some improvement, so there’s still a long way to go.</p>
+
+<h2 id="reference">REFERENCE</h2>
+
+<p><a href="http://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum&amp;section=ControlStateSpace">MATLAB: State-Space Methods for Controller Design</a></p>
+
+<p><a href="https://ocw.mit.edu/courses/mechanical-engineering/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/lecture-notes/lec19.pdf">MIT OCW Linear Quadratic Regulator</a></p>
+
+<p><a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-30-feedback-control-systems-fall-2010/lecture-notes/MIT16_30F10_lec18.pdf">MIT OCW Feedback Control</a></p>
+
+<p><a href="https://arxiv.org/abs/1509.02971">Continuous control with deep reinforcement learning</a></p>
+
+<p>Measurement of moment of inertia: Katsuhiko Ogata(2004). System Dynamics (4th ed). pp.82-83 New Jersey:Pearson</p>
+
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Outline</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#robots" id="markdown-toc-robots">ROBOTS</a></li>
+  <li><a href="#physical-model" id="markdown-toc-physical-model">PHYSICAL MODEL</a>    <ul>
+      <li><a href="#newton-method" id="markdown-toc-newton-method">NEWTON METHOD</a></li>
+      <li><a href="#lagrangian-method" id="markdown-toc-lagrangian-method">LAGRANGIAN METHOD</a></li>
+    </ul>
+  </li>
+  <li><a href="#measurement" id="markdown-toc-measurement">MEASUREMENT</a></li>
+  <li><a href="#simulation" id="markdown-toc-simulation">SIMULATION</a>    <ul>
+      <li><a href="#state-space" id="markdown-toc-state-space">STATE SPACE</a></li>
+      <li><a href="#transfer-function" id="markdown-toc-transfer-function">TRANSFER FUNCTION</a></li>
+    </ul>
+  </li>
+  <li><a href="#implementation" id="markdown-toc-implementation">IMPLEMENTATION</a>    <ul>
+      <li><a href="#hardware" id="markdown-toc-hardware">HARDWARE</a></li>
+      <li><a href="#schematics" id="markdown-toc-schematics">Schematics</a></li>
+      <li><a href="#diagram" id="markdown-toc-diagram">Diagram</a></li>
+    </ul>
+  </li>
+  <li><a href="#videos" id="markdown-toc-videos">VIDEOS</a></li>
+  <li><a href="#analysis" id="markdown-toc-analysis">ANALYSIS</a>    <ul>
+      <li><a href="#angle" id="markdown-toc-angle">Angle</a></li>
+      <li><a href="#angle-rate" id="markdown-toc-angle-rate">Angle Rate</a></li>
+      <li><a href="#angle-sum" id="markdown-toc-angle-sum">Angle Sum</a></li>
+    </ul>
+  </li>
+  <li><a href="#futurework-machine-learning" id="markdown-toc-futurework-machine-learning">FUTUREWORK: MACHINE LEARNING</a></li>
+  <li><a href="#reference" id="markdown-toc-reference">REFERENCE</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/blog/tags/#control" class="page__taxonomy-item" rel="tag">Control</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/blog/tags/#linkit-7697" class="page__taxonomy-item" rel="tag">LinkIt 7697</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/blog/tags/#machine-learning" class="page__taxonomy-item" rel="tag">Machine Learning</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/blog/categories/#robot" class="page__taxonomy-item" rel="tag">Robot</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-09-22T00:00:00+08:00">September 22, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Balancing+Car%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Frobot%2Fbalancing-car%2F" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Frobot%2Fbalancing-car%2F" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Frobot%2Fbalancing-car%2F" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Frobot%2Fbalancing-car%2F" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/blog/diary/my-first-post/" class="pagination--pager" title="My First Post
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/blog/linux/mount-android-in-linux/" class="pagination--pager" title="Mount Android in Linux
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/blog/assets/images/unsplash-4.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/blog/math/linear-algebra-note/" rel="permalink">Note of Linear Algebra
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Changes
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/blog/assets/images/unsplash-3.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="permalink">Using MathJax to display TeX on Jekyll
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Sometimes we may need to some math equations on posts, 
+using LaTeX is the best way but not works on markdown,
+so we have to import additional tool to deal w...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/blog/assets/images/unsplash-2.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="permalink">Mount Android in Linux
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">To communicate with Android Phone in Linux, 
+we have to use MTP, 
+Media Transfer Protocol.
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/blog/assets/images/unsplash-1.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/blog/diary/my-first-post/" rel="permalink">My First Post
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Test!
+Test2!
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/YuanYuYuan"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+      <li><a href="http://gitlab.com/YuanYuYuan"><i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+    
+    
+    <li><a href="http://localhost:4000/blog/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Yuan Yu Yuan. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+  </body>
+</html>
