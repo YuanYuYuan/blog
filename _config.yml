@@ -6,9 +6,9 @@ title                    : "Yuan's blog"
 title_separator          : "-"
 name                     : "Yuan Yu Yuan"
 description              : "A personal blog"
-url                      : "https://yuanyuyuan.gitlab.io"
+url                      : "https://yuanyuyuan.github.io"
 baseurl                  : "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "blog"
 teaser                   : "/assets/images/unsplash-1.jpg"
 
 # Site Author
