@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-10-13T17:40:26+08:00</updated><id>http://localhost:4000/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Note of Linear Algebra</title><link href="http://localhost:4000/blog/math/linear-algebra-note/" rel="alternate" type="text/html" title="Note of Linear Algebra" /><published>2017-10-01T00:00:00+08:00</published><updated>2017-10-01T00:00:00+08:00</updated><id>http://localhost:4000/blog/math/linear-algebra-note</id><content type="html" xml:base="http://localhost:4000/blog/math/linear-algebra-note/">&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://yuanyuyuan.gitlab.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yuanyuyuan.gitlab.io/blog/" rel="alternate" type="text/html" /><updated>2018-01-18T10:24:40+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Note of Linear Algebra</title><link href="https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note/" rel="alternate" type="text/html" title="Note of Linear Algebra" /><published>2017-10-01T00:00:00+08:00</published><updated>2017-10-01T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note/">&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
 
 &lt;p&gt;2017-10-01: Add invariant subspace&lt;/p&gt;
 
-&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;720&quot; height=&quot;540&quot;&gt;&lt;/iframe&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Linear Algebra" /><summary type="html">Changes</summary></entry><entry><title type="html">Using MathJax to display TeX on Jekyll</title><link href="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="alternate" type="text/html" title="Using MathJax to display TeX on Jekyll" /><published>2017-09-30T00:00:00+08:00</published><updated>2017-09-30T00:00:00+08:00</updated><id>http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/">&lt;p&gt;Sometimes we may need to some math equations on posts, 
+&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;720&quot; height=&quot;540&quot;&gt;&lt;/iframe&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Linear Algebra" /><summary type="html">Changes</summary></entry><entry><title type="html">Using MathJax to display TeX on Jekyll</title><link href="https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="alternate" type="text/html" title="Using MathJax to display TeX on Jekyll" /><published>2017-09-30T00:00:00+08:00</published><updated>2017-09-30T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/">&lt;p&gt;Sometimes we may need to some math equations on posts, 
 using LaTeX is the best way but not works on markdown,
 so we have to import additional tool to deal with it.&lt;/p&gt;
 
@@ -19,51 +19,47 @@ and the source &lt;a href=&quot;https://github.com/mathjax/MathJax&quot;&gt;math
 
 &lt;p&gt;Just add the following tag in the markdown and it will trigger cdnjs automatically.&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;async&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And for avoiding adding this annoying tag every time, 
 one can add this scripts.html to folder &lt;strong&gt;_includes&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &amp;lt;script type=&quot;text/javascript&quot; async
   src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&amp;gt;
 &amp;lt;/script&amp;gt;
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then we just need to add &lt;strong&gt;mathjax:true&lt;/strong&gt; at the YAML Front Matter of the post.&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Using&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MathJax&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;TeX&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;teaser&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Photo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;credit:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[**Unsplash**](https://unsplash.com)&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Using&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MathJax&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;TeX&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;teaser&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/unsplash-3.jpg&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Photo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;credit:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[**Unsplash**](https://unsplash.com)&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;
   &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;TeX&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;span class=&quot;na&quot;&gt;mathjax&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;For example,&lt;/p&gt;
 
-&lt;div class=&quot;language-tex highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;begin&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;align&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;language-tex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;begin&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;align&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;\dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;}&amp;amp;&lt;/span&gt;=Ax+Bu &lt;span class=&quot;k&quot;&gt;\\\
     &lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;=Cx+Du
 &lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;end&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;align&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;\begin{align}
     \dot{x}&amp;amp;=Ax+Bu \\
     y&amp;amp;=Cx+Du
-\end{align}&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Jekyll" /><category term="TeX" /><summary type="html">Sometimes we may need to some math equations on posts, using LaTeX is the best way but not works on markdown, so we have to import additional tool to deal with it.</summary></entry><entry><title type="html">Mount Android in Linux</title><link href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>http://localhost:4000/blog/linux/mount-android-in-linux</id><content type="html" xml:base="http://localhost:4000/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
+\end{align}&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Jekyll" /><category term="TeX" /><summary type="html">Sometimes we may need to some math equations on posts, using LaTeX is the best way but not works on markdown, so we have to import additional tool to deal with it.</summary></entry><entry><title type="html">Mount Android in Linux</title><link href="https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
 we have to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;, 
 Media Transfer Protocol.&lt;/p&gt;
 
@@ -82,22 +78,19 @@ Media Transfer Protocol.&lt;/p&gt;
 
 &lt;p&gt;List detected devices&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;simple-mtpfs -l
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;simple-mtpfs &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
 1: AsusFonepad 7 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;FE375CXG&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Mount device 1 on ~/mnt&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;simple-mtpfs --device 1 ~/mnt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;simple-mtpfs &lt;span class=&quot;nt&quot;&gt;--device&lt;/span&gt; 1 ~/mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Unmount mountpoint ~/mnt&lt;/p&gt;
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;fusermount -u ~/mnt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;fusermount &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; ~/mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;configuration-of-thunar&quot;&gt;Configuration of Thunar&lt;/h2&gt;
 
@@ -107,15 +100,15 @@ Media Transfer Protocol.&lt;/p&gt;
 
 &lt;p&gt;And launch Thunar and go to &lt;em&gt;Edit&lt;/em&gt; &amp;gt; &lt;em&gt;Preferences&lt;/em&gt;, check &lt;em&gt;Enable Volume Managerment&lt;/em&gt; under the &lt;em&gt;Advanced&lt;/em&gt; tab.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/thunar-volman-1.png&quot; alt=&quot;thunar-volman-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/thunar-volman-1.png&quot; alt=&quot;thunar-volman-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Check &lt;em&gt;Mount removable drivers when hot-plugged&lt;/em&gt;, &lt;em&gt;Mount removable media wehn inserted&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/thunar-volman-2.png&quot; alt=&quot;thunar-volman-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/thunar-volman-2.png&quot; alt=&quot;thunar-volman-2&quot; /&gt;&lt;/p&gt;
 
 &lt;aside class=&quot;sidebar__right&quot;&gt;
 &lt;nav class=&quot;toc&quot;&gt;
-    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
 &lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#installation&quot; id=&quot;markdown-toc-installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#usage-of-simple-mtpfs&quot; id=&quot;markdown-toc-usage-of-simple-mtpfs&quot;&gt;Usage of simple-mtpfs&lt;/a&gt;&lt;/li&gt;
@@ -123,7 +116,7 @@ Media Transfer Protocol.&lt;/p&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="http://localhost:4000/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>http://localhost:4000/blog/robot/balancing-car</id><content type="html" xml:base="http://localhost:4000/blog/robot/balancing-car/">&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="https://yuanyuyuan.gitlab.io/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/robot/balancing-car</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/robot/balancing-car/">&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
 
 &lt;h2 id=&quot;robots&quot;&gt;ROBOTS&lt;/h2&gt;
 
@@ -134,14 +127,14 @@ which is small, compact, modolarized and easy to train and verified the control 
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/small-car.jpg&quot; title=&quot;Small Car&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/small-car.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.jpg&quot; title=&quot;Small Car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/big-car.png&quot; title=&quot;Big Car&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/big-car.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.png&quot; title=&quot;Big Car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -162,20 +155,20 @@ so we have to calculate the relative inertial force casued by the acceleration o
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; title=&quot;Side view of small car&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; title=&quot;Side view of small car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png&quot; title=&quot;Free Body Diagram of rod&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-rod.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-rod.png&quot; title=&quot;Free Body Diagram of rod&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-rod.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-wheel.png&quot; title=&quot;Free Body Diagram of Wheel&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/FBD-wheel.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; title=&quot;Free Body Diagram of Wheel&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -325,12 +318,12 @@ so we have to set up an experiment like the following picture,
 hanging the robot by two wires and measure the spin period, 
 and derive the theoretical momentum inertia.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/measurement.png&quot; alt=&quot;measurement&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/measurement.png&quot; alt=&quot;measurement&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And the following is simple python code used to compute the inertia.&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# unit: MKS&lt;/span&gt;
 
@@ -359,8 +352,7 @@ and derive the theoretical momentum inertia.&lt;/p&gt;
 
 &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;J&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Error is {}&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally, we got the table of desired parameter.&lt;/p&gt;
 
@@ -458,35 +450,35 @@ anthor one is transfer fucntion in classical control.&lt;/p&gt;
 
 &lt;p&gt;Orignal PID control block diagram&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-1.png&quot; alt=&quot;PID-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-1.png&quot; alt=&quot;PID-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After rearrange&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-2.png&quot; alt=&quot;PID-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-2.png&quot; alt=&quot;PID-2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Thus get the transfer function of the controlled system&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-3.png&quot; alt=&quot;PID-3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-3.png&quot; alt=&quot;PID-3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Plug in the ideal motor model to approximate the true model&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/ideal-motor-model.png&quot; alt=&quot;ideal-motor-model&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/ideal-motor-model.png&quot; alt=&quot;ideal-motor-model&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then we have the complete transfer function&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-4.png&quot; alt=&quot;PID-4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-4.png&quot; alt=&quot;PID-4&quot; /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png&quot; title=&quot;PID-response-1&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-1.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-1.png&quot; title=&quot;PID-response-1&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-1.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png&quot; title=&quot;PID-response-2&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/PID-response-2.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-2.png&quot; title=&quot;PID-response-2&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-2.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -508,14 +500,14 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD.png&quot; title=&quot;CAD&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD.png&quot; title=&quot;CAD&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png&quot; title=&quot;CAD Explosion&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/CAD-explosion.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -528,20 +520,20 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/7697.jpg&quot; title=&quot;LinkIt 7697&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/7697.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/7697.jpg&quot; title=&quot;LinkIt 7697&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/7697.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/L293D.jpg&quot; title=&quot;L293D Motor Driver IC&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/L293D.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/L293D.jpg&quot; title=&quot;L293D Motor Driver IC&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/L293D.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/MPU6050.jpg&quot; title=&quot;IMU Sensor MPU6050&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/MPU6050.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/MPU6050.jpg&quot; title=&quot;IMU Sensor MPU6050&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/MPU6050.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -553,7 +545,7 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 
 &lt;h3 id=&quot;schematics&quot;&gt;Schematics&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/schematics.png&quot; alt=&quot;schematics&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/schematics.png&quot; alt=&quot;schematics&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;diagram&quot;&gt;Diagram&lt;/h3&gt;
 
@@ -561,13 +553,13 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 some difficult works are the conversion from continuous model to discrete computation on the micro controller, 
 and the correction of the derived angle by adding some filter like compimentary filter/Kalman filter.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/diagram.png&quot; alt=&quot;diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/diagram.png&quot; alt=&quot;diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;videos&quot;&gt;VIDEOS&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/small-car.gif&quot; alt=&quot;small-car&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.gif&quot; alt=&quot;small-car&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/big-car.gif&quot; alt=&quot;big-car&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.gif&quot; alt=&quot;big-car&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;analysis&quot;&gt;ANALYSIS&lt;/h2&gt;
 
@@ -576,15 +568,15 @@ the following pictures are recorded data while small car balancing with PID cont
 
 &lt;h3 id=&quot;angle&quot;&gt;Angle&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-analysis.png&quot; alt=&quot;angle-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-analysis.png&quot; alt=&quot;angle-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;angle-rate&quot;&gt;Angle Rate&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-rate-analysis.png&quot; alt=&quot;angle-rate-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-rate-analysis.png&quot; alt=&quot;angle-rate-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;angle-sum&quot;&gt;Angle Sum&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/angle-sum-analysis.png&quot; alt=&quot;angle-sum-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-sum-analysis.png&quot; alt=&quot;angle-sum-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;futurework-machine-learning&quot;&gt;FUTUREWORK: MACHINE LEARNING&lt;/h2&gt;
 
@@ -609,14 +601,14 @@ to balance a inverted pendulum in a custom OpenAI GYM environment.&lt;/p&gt;
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png&quot; title=&quot;DDPG-model&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG-model.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG-model.png&quot; title=&quot;DDPG-model&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG-model.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif&quot; title=&quot;CAD Explosion&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/DDPG.gif&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG.gif&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG.gif&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -628,7 +620,7 @@ to balance a inverted pendulum in a custom OpenAI GYM environment.&lt;/p&gt;
 
 &lt;p&gt;The following is the diagram for balancing car under maching learning&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/blog/assets/images/balancing-car/ML-diagram.png&quot; alt=&quot;ML-diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/ML-diagram.png&quot; alt=&quot;ML-diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, there are still some works to implement the RL algorithm on the robot car, 
 including the wireless data transformission(the C++ &lt;a href=&quot;https://github.com/YuanYuYuan/balancing-robot/tree/master/libs/DataTransimission&quot;&gt;library&lt;/a&gt; is under developed), and the learnging environment of the robot 
@@ -648,7 +640,7 @@ still need some improvement, so there’s still a long way to go.&lt;/p&gt;
 
 &lt;aside class=&quot;sidebar__right&quot;&gt;
 &lt;nav class=&quot;toc&quot;&gt;
-    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
 &lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#robots&quot; id=&quot;markdown-toc-robots&quot;&gt;ROBOTS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#physical-model&quot; id=&quot;markdown-toc-physical-model&quot;&gt;PHYSICAL MODEL&lt;/a&gt;    &lt;ul&gt;
@@ -680,5 +672,5 @@ still need some improvement, so there’s still a long way to go.&lt;/p&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="http://localhost:4000/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>http://localhost:4000/blog/diary/my-first-post</id><content type="html" xml:base="http://localhost:4000/blog/diary/my-first-post/">&lt;p&gt;Test!
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="https://yuanyuyuan.gitlab.io/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/diary/my-first-post</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/diary/my-first-post/">&lt;p&gt;Test!
 Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><category term="jekyll" /><summary type="html">Test! Test2!</summary></entry></feed>

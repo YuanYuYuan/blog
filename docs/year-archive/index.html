@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.6.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -36,8 +36,21 @@
 <meta property="og:title" content="Posts by Year">
 
 
-  <link rel="canonical" href="http://localhost:4000/blog/year-archive/">
-  <meta property="og:url" content="http://localhost:4000/blog/year-archive/">
+  <link rel="canonical" href="https://yuanyuyuan.gitlab.io/blog/year-archive/">
+  <meta property="og:url" content="https://yuanyuyuan.gitlab.io/blog/year-archive/">
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,7 +77,7 @@
 <!-- end SEO -->
 
 
-<link href="http://localhost:4000/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Yuan's blog Feed">
+<link href="https://yuanyuyuan.gitlab.io/blog/feed.xml" type="application/atom+xml" rel="alternate" title="Yuan's blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -76,7 +89,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/blog/assets/css/main.css">
+<link rel="stylesheet" href="https://yuanyuyuan.gitlab.io/blog/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -104,33 +117,45 @@
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/blog/">Yuan's blog</a>
+        <a class="site-title" href="https://yuanyuyuan.gitlab.io/blog/">Yuan's blog</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/year-archive/">Posts</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://yuanyuyuan.gitlab.io/blog/year-archive/" >Posts</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/tags/">Tags</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://yuanyuyuan.gitlab.io/blog/tags/" >Tags</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/blog/categories/">Categories</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://yuanyuyuan.gitlab.io/blog/categories/" >Categories</a>
+            </li>
           
         </ul>
-        <button><div class="navicon"></div></button>
+        
+        <button class="greedy-nav__toggle" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+    <div class="initial-content">
+      
 
 
 
@@ -144,13 +169,17 @@
   
     <div class="author__avatar">
       
-        <img src="http://localhost:4000/blog/assets/images/bio-photo.jpg" class="author__avatar" alt="Yuan Yu Yuan" itemprop="image">
+
+      
+        <img src="https://yuanyuyuan.gitlab.io/blog/assets/images/bio-photo.jpg" alt="Yuan Yu Yuan" itemprop="image">
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">Yuan Yu Yuan</h3>
+    
+      <h3 class="author__name" itemprop="name">Yuan Yu Yuan</h3>
+    
     
       <p class="author__bio" itemprop="description">
         Someone who likes Linux, robot and math
@@ -163,7 +192,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Taiwan</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Taiwan</span>
         </li>
       
 
@@ -173,7 +202,7 @@
         <li>
           <a href="mailto:az6980522@gmail.com">
             <meta itemprop="email" content="az6980522@gmail.com" />
-            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
           </a>
         </li>
       
@@ -199,7 +228,7 @@
       
         <li>
           <a href="https://github.com/YuanYuYuan" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
       
@@ -207,7 +236,7 @@
       
         <li>
           <a href="https://gitlab.com/YuanYuYuan" itemprop="sameAs">
-            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab
+            <i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab
           </a>
         </li>
       
@@ -228,7 +257,7 @@
         
           <li>
             <a href="https://www.youtube.com/channel/UCHoFSmS_Gr5Og29pQv4ctwA" itemprop="sameAs">
-              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+              <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube
             </a>
           </li>
         
@@ -247,7 +276,7 @@
       <!--
   <li>
     <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -279,12 +308,12 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/blog/math/linear-algebra-note/" rel="permalink">Note of Linear Algebra
+        <a href="https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note/" rel="permalink">Note of Linear Algebra
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
 
@@ -309,12 +338,12 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="permalink">Using MathJax to display TeX on Jekyll
+        <a href="https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="permalink">Using MathJax to display TeX on Jekyll
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
 
@@ -339,12 +368,12 @@ so we have to import additional tool to deal w...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/blog/linux/mount-android-in-linux/" rel="permalink">Mount Android in Linux
+        <a href="https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux/" rel="permalink">Mount Android in Linux
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
 
@@ -371,12 +400,12 @@ Media Transfer Protocol.
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/blog/robot/balancing-car/" rel="permalink">Balancing Car
+        <a href="https://yuanyuyuan.gitlab.io/blog/robot/balancing-car/" rel="permalink">Balancing Car
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
 
@@ -401,12 +430,12 @@ Media Transfer Protocol.
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/blog/diary/my-first-post/" rel="permalink">My First Post
+        <a href="https://yuanyuyuan.gitlab.io/blog/diary/my-first-post/" rel="permalink">My First Post
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
 
@@ -422,6 +451,9 @@ Test2!
 
   </div>
 </div>
+    </div>
+
+    
 
     <div class="page__footer">
       <footer>
@@ -436,17 +468,17 @@ Test2!
     
     
     
-      <li><a href="http://github.com/YuanYuYuan"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/YuanYuYuan"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-      <li><a href="http://gitlab.com/YuanYuYuan"><i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
+      <li><a href="https://gitlab.com/YuanYuYuan"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
     
     
-    <li><a href="http://localhost:4000/blog/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://yuanyuyuan.gitlab.io/blog/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2017 Yuan Yu Yuan. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Yuan Yu Yuan. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
