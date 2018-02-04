@@ -1,8 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://yuanyuyuan.gitlab.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yuanyuyuan.gitlab.io/blog/" rel="alternate" type="text/html" /><updated>2018-01-18T10:24:40+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Note of Linear Algebra</title><link href="https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note/" rel="alternate" type="text/html" title="Note of Linear Algebra" /><published>2017-10-01T00:00:00+08:00</published><updated>2017-10-01T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/math/linear-algebra-note/">&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://yuanyuyuan.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yuanyuyuan.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-02-05T01:51:44+08:00</updated><id>https://yuanyuyuan.github.io/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Manage Github Repo in Command Line</title><link href="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/" rel="alternate" type="text/html" title="Manage Github Repo in Command Line" /><published>2018-02-05T00:00:00+08:00</published><updated>2018-02-05T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/">&lt;p&gt;Every time I have to create a github repository, 
+it took a lot of time using Web UI to make a new one.&lt;/p&gt;
+
+&lt;p&gt;So I wrote down this post to note the process of manage the github repo in command line.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-local-git-project&quot;&gt;Create Local Git Project&lt;/h2&gt;
+
+&lt;p&gt;First, initialize a git.&lt;/p&gt;
+
+&lt;p&gt;REPO is the repository to be created, 
+and the USERNAME is the owner on the github.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;REPO &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;REPO
+git init
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;init &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; README.md
+git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;init&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;create--link-remote-github-repo&quot;&gt;Create &amp;amp; Link Remote Github Repo&lt;/h2&gt;
+
+&lt;p&gt;Call github api&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'USERNAME'&lt;/span&gt; https://api.github.com/user/repos &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{&quot;name&quot;:&quot;REPO&quot;}'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use HTTPS to link&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin https://github.com/USERNAME/REPO.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Or use SSH to link&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin git@github.com:USERNAME/REPO.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally set the orgin and push&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;delete-remote-github-repo&quot;&gt;Delete Remote Github Repo&lt;/h2&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-X&lt;/span&gt; DELETE &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'USERNAME'&lt;/span&gt; https://api.github.com/repos/USERNAME/REPO
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;aside class=&quot;sidebar__right&quot;&gt;
+&lt;nav class=&quot;toc&quot;&gt;
+    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-text&quot;&gt;&lt;/i&gt; Outline&lt;/h4&gt;&lt;/header&gt;
+&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-local-git-project&quot; id=&quot;markdown-toc-create-local-git-project&quot;&gt;Create Local Git Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#create--link-remote-github-repo&quot; id=&quot;markdown-toc-create--link-remote-github-repo&quot;&gt;Create &amp;amp; Link Remote Github Repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#delete-remote-github-repo&quot; id=&quot;markdown-toc-delete-remote-github-repo&quot;&gt;Delete Remote Github Repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/nav&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Git" /><summary type="html">Every time I have to create a github repository, it took a lot of time using Web UI to make a new one.</summary></entry><entry><title type="html">Note of Linear Algebra</title><link href="https://yuanyuyuan.github.io/blog/math/linear-algebra-note/" rel="alternate" type="text/html" title="Note of Linear Algebra" /><published>2017-10-01T00:00:00+08:00</published><updated>2017-10-01T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/math/linear-algebra-note</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/math/linear-algebra-note/">&lt;h2 id=&quot;changes&quot;&gt;Changes&lt;/h2&gt;
 
 &lt;p&gt;2017-10-01: Add invariant subspace&lt;/p&gt;
 
-&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;720&quot; height=&quot;540&quot;&gt;&lt;/iframe&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Linear Algebra" /><summary type="html">Changes</summary></entry><entry><title type="html">Using MathJax to display TeX on Jekyll</title><link href="https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="alternate" type="text/html" title="Using MathJax to display TeX on Jekyll" /><published>2017-09-30T00:00:00+08:00</published><updated>2017-09-30T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/">&lt;p&gt;Sometimes we may need to some math equations on posts, 
+&lt;iframe src=&quot;https://drive.google.com/file/d/0B0HNqd_8V0OlRURhZnBwTmRhbDA/preview&quot; width=&quot;720&quot; height=&quot;540&quot;&gt;&lt;/iframe&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Linear Algebra" /><summary type="html">Changes</summary></entry><entry><title type="html">Using MathJax to display TeX on Jekyll</title><link href="https://yuanyuyuan.github.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/" rel="alternate" type="text/html" title="Using MathJax to display TeX on Jekyll" /><published>2017-09-30T00:00:00+08:00</published><updated>2017-09-30T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/jekyll/using-mathjax-to-display-tex-on-jekyll/">&lt;p&gt;Sometimes we may need to some math equations on posts, 
 using LaTeX is the best way but not works on markdown,
 so we have to import additional tool to deal with it.&lt;/p&gt;
 
@@ -59,7 +114,7 @@ one can add this scripts.html to folder &lt;strong&gt;_includes&lt;/strong&gt;.&
 &lt;p&gt;\begin{align}
     \dot{x}&amp;amp;=Ax+Bu \\
     y&amp;amp;=Cx+Du
-\end{align}&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Jekyll" /><category term="TeX" /><summary type="html">Sometimes we may need to some math equations on posts, using LaTeX is the best way but not works on markdown, so we have to import additional tool to deal with it.</summary></entry><entry><title type="html">Mount Android in Linux</title><link href="https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
+\end{align}&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Jekyll" /><category term="TeX" /><summary type="html">Sometimes we may need to some math equations on posts, using LaTeX is the best way but not works on markdown, so we have to import additional tool to deal with it.</summary></entry><entry><title type="html">Mount Android in Linux</title><link href="https://yuanyuyuan.github.io/blog/linux/mount-android-in-linux/" rel="alternate" type="text/html" title="Mount Android in Linux" /><published>2017-09-25T00:00:00+08:00</published><updated>2017-09-25T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/linux/mount-android-in-linux</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/linux/mount-android-in-linux/">&lt;p&gt;To communicate with Android Phone in Linux, 
 we have to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Media_Transfer_Protocol&quot;&gt;MTP&lt;/a&gt;, 
 Media Transfer Protocol.&lt;/p&gt;
 
@@ -100,11 +155,11 @@ Media Transfer Protocol.&lt;/p&gt;
 
 &lt;p&gt;And launch Thunar and go to &lt;em&gt;Edit&lt;/em&gt; &amp;gt; &lt;em&gt;Preferences&lt;/em&gt;, check &lt;em&gt;Enable Volume Managerment&lt;/em&gt; under the &lt;em&gt;Advanced&lt;/em&gt; tab.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/thunar-volman-1.png&quot; alt=&quot;thunar-volman-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/thunar-volman-1.png&quot; alt=&quot;thunar-volman-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Check &lt;em&gt;Mount removable drivers when hot-plugged&lt;/em&gt;, &lt;em&gt;Mount removable media wehn inserted&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/thunar-volman-2.png&quot; alt=&quot;thunar-volman-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/thunar-volman-2.png&quot; alt=&quot;thunar-volman-2&quot; /&gt;&lt;/p&gt;
 
 &lt;aside class=&quot;sidebar__right&quot;&gt;
 &lt;nav class=&quot;toc&quot;&gt;
@@ -116,7 +171,7 @@ Media Transfer Protocol.&lt;/p&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="https://yuanyuyuan.gitlab.io/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/robot/balancing-car</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/robot/balancing-car/">&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Android" /><summary type="html">To communicate with Android Phone in Linux, we have to use MTP, Media Transfer Protocol.</summary></entry><entry><title type="html">Balancing Car</title><link href="https://yuanyuyuan.github.io/blog/robot/balancing-car/" rel="alternate" type="text/html" title="Balancing Car" /><published>2017-09-22T00:00:00+08:00</published><updated>2017-09-22T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/robot/balancing-car</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/robot/balancing-car/">&lt;p&gt;This is a project about the self-balancing car.&lt;/p&gt;
 
 &lt;h2 id=&quot;robots&quot;&gt;ROBOTS&lt;/h2&gt;
 
@@ -127,14 +182,14 @@ which is small, compact, modolarized and easy to train and verified the control 
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.jpg&quot; title=&quot;Small Car&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/small-car.jpg&quot; title=&quot;Small Car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/small-car.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.png&quot; title=&quot;Big Car&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/big-car.png&quot; title=&quot;Big Car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/big-car.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -155,20 +210,20 @@ so we have to calculate the relative inertial force casued by the acceleration o
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; title=&quot;Side view of small car&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; title=&quot;Side view of small car&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/small-car-side-view.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-rod.png&quot; title=&quot;Free Body Diagram of rod&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-rod.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/FBD-rod.png&quot; title=&quot;Free Body Diagram of rod&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/FBD-rod.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; title=&quot;Free Body Diagram of Wheel&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; title=&quot;Free Body Diagram of Wheel&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/FBD-wheel.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -318,7 +373,7 @@ so we have to set up an experiment like the following picture,
 hanging the robot by two wires and measure the spin period, 
 and derive the theoretical momentum inertia.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/measurement.png&quot; alt=&quot;measurement&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/measurement.png&quot; alt=&quot;measurement&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And the following is simple python code used to compute the inertia.&lt;/p&gt;
 
@@ -450,35 +505,35 @@ anthor one is transfer fucntion in classical control.&lt;/p&gt;
 
 &lt;p&gt;Orignal PID control block diagram&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-1.png&quot; alt=&quot;PID-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-1.png&quot; alt=&quot;PID-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After rearrange&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-2.png&quot; alt=&quot;PID-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-2.png&quot; alt=&quot;PID-2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Thus get the transfer function of the controlled system&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-3.png&quot; alt=&quot;PID-3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-3.png&quot; alt=&quot;PID-3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Plug in the ideal motor model to approximate the true model&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/ideal-motor-model.png&quot; alt=&quot;ideal-motor-model&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/ideal-motor-model.png&quot; alt=&quot;ideal-motor-model&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then we have the complete transfer function&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-4.png&quot; alt=&quot;PID-4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-4.png&quot; alt=&quot;PID-4&quot; /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-1.png&quot; title=&quot;PID-response-1&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-1.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-response-1.png&quot; title=&quot;PID-response-1&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-response-1.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-2.png&quot; title=&quot;PID-response-2&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/PID-response-2.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-response-2.png&quot; title=&quot;PID-response-2&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/PID-response-2.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -500,14 +555,14 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD.png&quot; title=&quot;CAD&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/CAD.png&quot; title=&quot;CAD&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/CAD.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; title=&quot;CAD Explosion&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/CAD-explosion.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -520,20 +575,20 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 &lt;figure class=&quot;third &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/7697.jpg&quot; title=&quot;LinkIt 7697&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/7697.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/7697.jpg&quot; title=&quot;LinkIt 7697&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/7697.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/L293D.jpg&quot; title=&quot;L293D Motor Driver IC&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/L293D.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/L293D.jpg&quot; title=&quot;L293D Motor Driver IC&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/L293D.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/MPU6050.jpg&quot; title=&quot;IMU Sensor MPU6050&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/MPU6050.jpg&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/MPU6050.jpg&quot; title=&quot;IMU Sensor MPU6050&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/MPU6050.jpg&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -545,7 +600,7 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 
 &lt;h3 id=&quot;schematics&quot;&gt;Schematics&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/schematics.png&quot; alt=&quot;schematics&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/schematics.png&quot; alt=&quot;schematics&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;diagram&quot;&gt;Diagram&lt;/h3&gt;
 
@@ -553,13 +608,13 @@ and the main controller is LinkIt 7697 which is much powerful then Arduino board
 some difficult works are the conversion from continuous model to discrete computation on the micro controller, 
 and the correction of the derived angle by adding some filter like compimentary filter/Kalman filter.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/diagram.png&quot; alt=&quot;diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/diagram.png&quot; alt=&quot;diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;videos&quot;&gt;VIDEOS&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/small-car.gif&quot; alt=&quot;small-car&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/small-car.gif&quot; alt=&quot;small-car&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/big-car.gif&quot; alt=&quot;big-car&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/big-car.gif&quot; alt=&quot;big-car&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;analysis&quot;&gt;ANALYSIS&lt;/h2&gt;
 
@@ -568,15 +623,15 @@ the following pictures are recorded data while small car balancing with PID cont
 
 &lt;h3 id=&quot;angle&quot;&gt;Angle&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-analysis.png&quot; alt=&quot;angle-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/angle-analysis.png&quot; alt=&quot;angle-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;angle-rate&quot;&gt;Angle Rate&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-rate-analysis.png&quot; alt=&quot;angle-rate-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/angle-rate-analysis.png&quot; alt=&quot;angle-rate-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;angle-sum&quot;&gt;Angle Sum&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/angle-sum-analysis.png&quot; alt=&quot;angle-sum-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/angle-sum-analysis.png&quot; alt=&quot;angle-sum-analysis&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;futurework-machine-learning&quot;&gt;FUTUREWORK: MACHINE LEARNING&lt;/h2&gt;
 
@@ -601,14 +656,14 @@ to balance a inverted pendulum in a custom OpenAI GYM environment.&lt;/p&gt;
 &lt;figure class=&quot;half &quot;&gt;
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG-model.png&quot; title=&quot;DDPG-model&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG-model.png&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/DDPG-model.png&quot; title=&quot;DDPG-model&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/DDPG-model.png&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
     
-      &lt;a href=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG.gif&quot; title=&quot;CAD Explosion&quot;&gt;
-        &lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/DDPG.gif&quot; alt=&quot;&quot; /&gt;
+      &lt;a href=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/DDPG.gif&quot; title=&quot;CAD Explosion&quot;&gt;
+        &lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/DDPG.gif&quot; alt=&quot;&quot; /&gt;
       &lt;/a&gt;
     
   
@@ -620,7 +675,7 @@ to balance a inverted pendulum in a custom OpenAI GYM environment.&lt;/p&gt;
 
 &lt;p&gt;The following is the diagram for balancing car under maching learning&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.gitlab.io/blog/assets/images/balancing-car/ML-diagram.png&quot; alt=&quot;ML-diagram&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yuanyuyuan.github.io/blog/assets/images/balancing-car/ML-diagram.png&quot; alt=&quot;ML-diagram&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So far, there are still some works to implement the RL algorithm on the robot car, 
 including the wireless data transformission(the C++ &lt;a href=&quot;https://github.com/YuanYuYuan/balancing-robot/tree/master/libs/DataTransimission&quot;&gt;library&lt;/a&gt; is under developed), and the learnging environment of the robot 
@@ -672,5 +727,5 @@ still need some improvement, so there’s still a long way to go.&lt;/p&gt;
 &lt;/ul&gt;
 
   &lt;/nav&gt;
-&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="https://yuanyuyuan.gitlab.io/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>https://yuanyuyuan.gitlab.io/blog/diary/my-first-post</id><content type="html" xml:base="https://yuanyuyuan.gitlab.io/blog/diary/my-first-post/">&lt;p&gt;Test!
+&lt;/aside&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="Control" /><category term="LinkIt 7697" /><category term="Machine Learning" /><summary type="html">This is a project about the self-balancing car.</summary></entry><entry><title type="html">My First Post</title><link href="https://yuanyuyuan.github.io/blog/diary/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2017-09-19T00:00:00+08:00</published><updated>2017-09-19T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/diary/my-first-post</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/diary/my-first-post/">&lt;p&gt;Test!
 Test2!&lt;/p&gt;</content><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><category term="minimal-mistakes" /><category term="jekyll" /><summary type="html">Test! Test2!</summary></entry></feed>

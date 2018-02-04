@@ -1,1 +1,1 @@
-Sitemap: https://yuanyuyuan.gitlab.io/blog/sitemap.xml
+Sitemap: https://yuanyuyuan.github.io/blog/sitemap.xml
