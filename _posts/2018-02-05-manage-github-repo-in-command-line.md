@@ -15,6 +15,31 @@ it took a lot of time using Web UI to make a new one.
 
 So I wrote down this post to note the process of manage the github repo in command line.
 
+And the following is a script which automatically handles the job.
+
+```sh
+#! /usr/bin/env bash
+
+echo -n "Enter name of repository:  "
+read REPO
+
+echo -n "Enter name of user: "
+read USERNAME
+
+mkdir $REPO
+cd $REPO
+git init 
+echo init > README.md
+git add .
+git commit -m "init"
+
+eval "curl -u '$USERNAME' https://api.github.com/user/repos -d '{\"name\":\"$REPO\"}'"
+
+git remote add origin git@github.com:$USERNAME/$REPO.git
+git push --set-upstream origin master
+```
+
+
 
 ## Create Local Git Project
 

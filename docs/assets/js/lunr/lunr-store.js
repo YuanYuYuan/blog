@@ -25,7 +25,7 @@ var store = [{
         "url": "https://yuanyuyuan.github.io/blog/math/linear-algebra-note/",
         "teaser":"https://yuanyuyuan.github.io/blog/assets/images/unsplash-4.jpg"},{
         "title": "Manage Github Repo in Command Line",
-        "excerpt":"Every time I have to create a github repository, it took a lot of time using Web UI to make a new one.So I wrote down this post to note the process of manage the github repo in command line.Create Local Git ProjectFirst, initialize a git.REPO is the repository to...","categories": ["Linux"],
+        "excerpt":"Every time I have to create a github repository, it took a lot of time using Web UI to make a new one.So I wrote down this post to note the process of manage the github repo in command line.And the following is a script which automatically handles the job.#!...","categories": ["Linux"],
         "tags": ["Git"],
         "url": "https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/",
         "teaser":"https://yuanyuyuan.github.io/blog/assets/images/unsplash-5.jpg"}]

@@ -1,7 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://yuanyuyuan.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yuanyuyuan.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-02-05T01:51:44+08:00</updated><id>https://yuanyuyuan.github.io/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Manage Github Repo in Command Line</title><link href="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/" rel="alternate" type="text/html" title="Manage Github Repo in Command Line" /><published>2018-02-05T00:00:00+08:00</published><updated>2018-02-05T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/">&lt;p&gt;Every time I have to create a github repository, 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://yuanyuyuan.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yuanyuyuan.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-02-05T02:26:58+08:00</updated><id>https://yuanyuyuan.github.io/blog/</id><title type="html">Yuan’s blog</title><subtitle>A personal blog</subtitle><author><name>Yuan Yu Yuan</name><email>az6980522@gmail.com</email></author><entry><title type="html">Manage Github Repo in Command Line</title><link href="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/" rel="alternate" type="text/html" title="Manage Github Repo in Command Line" /><published>2018-02-05T00:00:00+08:00</published><updated>2018-02-05T00:00:00+08:00</updated><id>https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line</id><content type="html" xml:base="https://yuanyuyuan.github.io/blog/linux/manage-github-repo-in-command-line/">&lt;p&gt;Every time I have to create a github repository, 
 it took a lot of time using Web UI to make a new one.&lt;/p&gt;
 
 &lt;p&gt;So I wrote down this post to note the process of manage the github repo in command line.&lt;/p&gt;
+
+&lt;p&gt;And the following is a script which automatically handles the job.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#! /usr/bin/env bash&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Enter name of repository:  &quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;REPO
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Enter name of user: &quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;USERNAME
+
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$REPO&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$REPO&lt;/span&gt;
+git init 
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;init &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; README.md
+git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;init&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;curl -u '&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$USERNAME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;' https://api.github.com/user/repos -d '{&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$REPO&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;}'&quot;&lt;/span&gt;
+
+git remote add origin git@github.com:&lt;span class=&quot;nv&quot;&gt;$USERNAME&lt;/span&gt;/&lt;span class=&quot;nv&quot;&gt;$REPO&lt;/span&gt;.git
+git push &lt;span class=&quot;nt&quot;&gt;--set-upstream&lt;/span&gt; origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;create-local-git-project&quot;&gt;Create Local Git Project&lt;/h2&gt;
 
